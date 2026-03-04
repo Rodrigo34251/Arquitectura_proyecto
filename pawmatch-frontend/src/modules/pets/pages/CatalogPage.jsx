@@ -23,18 +23,17 @@ export const CatalogPage = () => {
     fetchPets();
   }, []);
 
-  //  Renderizado Condicional: Estado de Carga (Loading)
+  //  Renderizado Condicional: Estado de Carga 
   if (loading) {
     return (
       <div className="flex flex-col justify-center items-center h-[60vh]">
-        {/* Spinner animado con Tailwind */}
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600 mb-4"></div>
         <p className="text-gray-500 font-medium">Buscando peluditos...</p>
       </div>
     );
   }
 
-  //  Renderizado Principal: El Catálogo
+  //Renderizado Principal: El Catálogo
   return (
     <div className="container mx-auto px-6 py-8 max-w-7xl">
       

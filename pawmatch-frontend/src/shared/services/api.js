@@ -10,7 +10,6 @@ export const apiClient = axios.create({
 // Simulador de retraso de red (para que parezca que carga de verdad)
 const delay = (ms) => new Promise(resolve => setTimeout(resolve, ms));
 
-
 export const mockApi = {
   // Simula el Login
   login: async (email, password) => {
@@ -31,12 +30,13 @@ export const mockApi = {
   },
 
   // Simula traer una sola mascota por su ID
-    getPetById: async (id) => {
+  getPetById: async (id) => {
     await delay(300);
     const pet = db.pets.find(p => p.id === parseInt(id));
     if (!pet) throw new Error('Mascota no encontrada');
     return pet;
   },
+
   getRequests: async () => {
     await delay(500);
     // Hacemos un "Join" manual para que la tabla tenga nombres en vez de solo IDs
@@ -59,7 +59,7 @@ export const mockApi = {
 
     request.status = newStatus; // Actualizamos la solicitud
 
-    // REGLA DE NEGOCIO: Si se aprueba, la mascota pasa a "Adoptada"
+    // Si se aprueba, la mascota pasa a "Adoptada"
     if (newStatus === 'Aprobada') {
       const pet = db.pets.find(p => p.id === request.petId);
       if (pet) pet.status = 'Adoptada';
@@ -73,8 +73,9 @@ export const mockApi = {
     return request;
   },
 
-  // Crear una nueva solicitud de adopción
-  createRequest: async (userId, petId) => {
+ 
+  // Crear una nueva solicitud de adopción 
+  createRequest: async (userId, petId, evaluationData) => {
     await delay(600);
     
     // ¿Ya tiene una solicitud pendiente para esta misma mascota?
@@ -91,7 +92,8 @@ export const mockApi = {
       userId: userId,
       petId: petId,
       status: 'Pendiente',
-      date: new Date().toISOString().split('T')[0] 
+      date: new Date().toISOString().split('T')[0],
+      evaluation: evaluationData 
     };
     db.requests.push(newRequest);
 

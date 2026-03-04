@@ -17,7 +17,7 @@ const ProtectedRoute = ({ children }) => {
   return children;
 };
 
-// 2. Guardia Basada en Rol (Solo Admin)
+// Guardia Basada en Rol (Solo Admin)
 const RoleBasedRoute = ({ children, allowedRoles }) => {
   const { role } = useAuth();
   if (!allowedRoles.includes(role)) return <Navigate to="/" replace />; // Redirige a home si no tiene permiso
@@ -32,7 +32,7 @@ export const AppRouter = () => {
         {/* Usamos el MainLayout para todas estas rutas */}
         <Route element={<MainLayout />}>
           
-          {/* RUTAS PÚBLICAS */}
+          {/* Rutas publicas */}
           <Route path="/" element={<CatalogPage />} /> {/* Catálogo como Home para el MVP */}
           <Route path="/pets" element={<CatalogPage />} />
           

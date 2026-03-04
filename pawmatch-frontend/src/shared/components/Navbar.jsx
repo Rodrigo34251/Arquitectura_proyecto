@@ -20,7 +20,7 @@ export const Navbar = () => {
     <nav className="bg-white shadow-md border-b border-gray-100 relative z-50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
         
-        {/* LOGO  */}
+        {/* Logo */}
         <Link to="/" className="flex items-center gap-2">
           <PawPrint className="text-primary-600 w-8 h-8" />
           <span className="text-2xl font-bold text-gray-900">
@@ -28,7 +28,7 @@ export const Navbar = () => {
           </span>
         </Link>
 
-        {/* BOTÓN DE HAMBURGUESA SOLO PARA CELU */}
+        {/* Boton de hamburguesa */}
         <button 
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden p-2 text-gray-600 hover:text-primary-600 transition"
@@ -36,7 +36,7 @@ export const Navbar = () => {
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-        {/* MENÚ DE COMPUTADORA */}
+        {/* Menu para la compu */}
         <div className="hidden md:flex items-center gap-6 text-gray-700 font-medium">
           <Link to="/pets" className="hover:text-primary-600 transition">Mascotas</Link>
 
@@ -68,7 +68,7 @@ export const Navbar = () => {
         </div>
       </div>
 
-      {/* MENÚ DESPLEGABLE DE CELULAR Solo aparece si isMenuOpen es true */}
+      {/* Menu para celu si está abierto el menu */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-lg py-4 px-6 flex flex-col gap-4 text-center">
           <Link to="/pets" onClick={() => setIsMenuOpen(false)} className="text-gray-700 font-medium py-2 hover:bg-gray-50 rounded-lg">Mascotas</Link>
