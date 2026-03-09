@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-
+<link rel="stylesheet" href="resources/css/styles.css">
 <head>
     <meta charset="utf-8">
     <style>
