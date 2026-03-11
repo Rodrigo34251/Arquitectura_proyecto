@@ -49,7 +49,7 @@ class AuthController extends Controller
             ], 500);
         }
     }
-
+    
     public function login(Request $request): JsonResponse
     {
         try {
@@ -88,7 +88,7 @@ class AuthController extends Controller
             'message' => 'Sesión cerrada exitosamente'
         ]);
     }
-
+   
     public function me(Request $request): JsonResponse
     {
         return response()->json([

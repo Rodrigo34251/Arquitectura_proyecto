@@ -2002,3 +2002,901 @@ Did you mean one of these?
 #53 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/pestphp/pest/bin/pest(192): {closure:C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/pestphp/pest/bin/pest:18}()
 #54 {main}
 "} 
+[2026-03-10 22:25:04] testing.INFO: Email enviado: Solicitud creada {"solicitud_id":1,"destinatario":"colin.yost@example.org"} 
+[2026-03-10 22:25:06] testing.INFO: Email enviado: Solicitud creada {"solicitud_id":1,"destinatario":"landen68@example.net"} 
+[2026-03-10 22:27:15] local.ERROR: Command "make:" is ambiguous.
+Did you mean one of these?
+    make:cache-table         Create a migration for the cache database table
+    make:cast                Create a new custom Eloquent cast class
+    make:channel             Create a new channel class
+    make:class               Create a new class
+    make:component           Create a new view component class
+    make:config              Create a new configuration file
+    make:command             Create a new Artisan command
+    make:controller          Create a new controller class
+    make:enum                Create a new enum
+    make:event               Create a new event class
+    make:exception           Create a new custom exception class
+    make:factory             Create a new model factory
+    make:interface           Create a new interface
+    make:job                 Create a new job class
+    make:job-middleware      Create a new job middleware class
+    make:listener            Create a new event listener class
+    make:mail                Create a new email class
+    make:middleware          Create a new HTTP middleware class
+    make:model               Create a new Eloquent model class
+    make:notification        Create a new notification class
+    make:notifications-table Create a migration for the notifications table
+    make:observer            Create a new observer class
+    make:policy              Create a new policy class
+    make:provider            Create a new service provider class
+    make:queue-failed-table  Create a migration for the failed queue jobs database table
+    make:queue-table         Create a migration for the queue jobs database table
+    make:queue-batches-table Create a migration for the batches database table
+    make:request             Create a new form request class
+    make:resource            Create a new resource
+    make:rule                Create a new validation rule
+    make:scope               Create a new scope class
+    make:seeder              Create a new seeder class
+    make:session-table       Create a migration for the session database table
+    make:test                Create a new test class
+    make:trait               Create a new trait
+    make:view                Create a new view
+    make:migration           Create a new migration file. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:\" is ambiguous.
+Did you mean one of these?
+    make:cache-table         Create a migration for the cache database table
+    make:cast                Create a new custom Eloquent cast class
+    make:channel             Create a new channel class
+    make:class               Create a new class
+    make:component           Create a new view component class
+    make:config              Create a new configuration file
+    make:command             Create a new Artisan command
+    make:controller          Create a new controller class
+    make:enum                Create a new enum
+    make:event               Create a new event class
+    make:exception           Create a new custom exception class
+    make:factory             Create a new model factory
+    make:interface           Create a new interface
+    make:job                 Create a new job class
+    make:job-middleware      Create a new job middleware class
+    make:listener            Create a new event listener class
+    make:mail                Create a new email class
+    make:middleware          Create a new HTTP middleware class
+    make:model               Create a new Eloquent model class
+    make:notification        Create a new notification class
+    make:notifications-table Create a migration for the notifications table
+    make:observer            Create a new observer class
+    make:policy              Create a new policy class
+    make:provider            Create a new service provider class
+    make:queue-failed-table  Create a migration for the failed queue jobs database table
+    make:queue-table         Create a migration for the queue jobs database table
+    make:queue-batches-table Create a migration for the batches database table
+    make:request             Create a new form request class
+    make:resource            Create a new resource
+    make:rule                Create a new validation rule
+    make:scope               Create a new scope class
+    make:seeder              Create a new seeder class
+    make:session-table       Create a migration for the session database table
+    make:test                Create a new test class
+    make:trait               Create a new trait
+    make:view                Create a new view
+    make:migration           Create a new migration file. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:815)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('make:')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#5 {main}
+"} 
+[2026-03-10 22:27:56] testing.INFO: Email enviado: Solicitud creada {"solicitud_id":1,"destinatario":"mtowne@example.org"} 
+[2026-03-10 22:27:56] testing.INFO: Email enviado: Solicitud aprobada {"solicitud_id":1,"destinatario":"ruecker.hans@example.org"} 
+[2026-03-10 22:27:56] testing.INFO: Email enviado: Solicitud rechazada {"solicitud_id":1,"destinatario":"reilly61@example.org"} 
+[2026-03-10 22:27:56] testing.INFO: Email enviado: Solicitud creada {"solicitud_id":1,"destinatario":"piper.kihn@example.net"} 
+[2026-03-10 23:03:35] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(743): Symfony/Component/Console/Application->findNamespace('l5-swagger')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('l5-swagger:gene...')
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#6 {main}
+"} 
+[2026-03-10 23:05:44] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(743): Symfony/Component/Console/Application->findNamespace('l5-swagger')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('l5-swagger:gene...')
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#6 {main}
+"} 
+[2026-03-10 23:06:40] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(743): Symfony/Component/Console/Application->findNamespace('l5-swagger')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('l5-swagger:gene...')
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#6 {main}
+"} 
+[2026-03-10 23:09:09] local.ERROR: Class "L5Swagger\L5SwaggerServiceProvider" not found {"exception":"[object] (Error(code: 0): Class \"L5Swagger\\L5SwaggerServiceProvider\" not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php:205)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(141): Illuminate/Foundation/ProviderRepository->createProvider('L5Swagger//L5Swa...')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/ProviderRepository.php(60): Illuminate/Foundation/ProviderRepository->compileManifest(Array)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(871): Illuminate/Foundation/ProviderRepository->load(Array)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/RegisterProviders.php(37): Illuminate/Foundation/Application->registerConfiguredProviders()
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(342): Illuminate/Foundation/Bootstrap/RegisterProviders->bootstrap(Object(Illuminate/Foundation/Application))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(494): Illuminate/Foundation/Application->bootstrapWith(Array)
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(196): Illuminate/Foundation/Console/Kernel->bootstrap()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#9 {main}
+"} 
+[2026-03-10 23:11:52] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(743): Symfony/Component/Console/Application->findNamespace('l5-swagger')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('l5-swagger:gene...')
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#6 {main}
+"} 
+[2026-03-10 23:14:00] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(743): Symfony/Component/Console/Application->findNamespace('l5-swagger')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('l5-swagger:gene...')
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#6 {main}
+"} 
+[2026-03-10 23:14:31] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(743): Symfony/Component/Console/Application->findNamespace('l5-swagger')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('l5-swagger:gene...')
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#6 {main}
+"} 
+[2026-03-10 23:18:23] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:222)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(138): Illuminate/Log/LogManager->resolve(NULL, NULL)
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(125): Illuminate/Log/LogManager->get(NULL)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(703): Illuminate/Log/LogManager->driver()
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(402): Illuminate/Log/LogManager->error('Class \"L5Swagge...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(365): Illuminate/Foundation/Exceptions/Handler->reportThrowable(Object(Error))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(641): Illuminate/Foundation/Exceptions/Handler->report(Object(Error))
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(200): Illuminate/Foundation/Console/Kernel->reportException(Object(Error))
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#9 {main}
+"} 
+[2026-03-10 23:18:23] laravel.ERROR: Class "L5Swagger\Generator" not found {"exception":"[object] (Error(code: 0): Class \"L5Swagger\\Generator\" not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/config/l5-swagger.php:54)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(115): require()
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(115): Illuminate/Foundation/Bootstrap/LoadConfiguration->{closure:Illuminate/Foundation/Bootstrap/LoadConfiguration::loadConfigurationFile():115}()
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(96): Illuminate/Foundation/Bootstrap/LoadConfiguration->loadConfigurationFile(Object(Illuminate/Config/Repository), 'l5-swagger', 'C://Users//Laptop...', Array)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(55): Illuminate/Foundation/Bootstrap/LoadConfiguration->loadConfigurationFiles(Object(Illuminate/Foundation/Application), Object(Illuminate/Config/Repository))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(342): Illuminate/Foundation/Bootstrap/LoadConfiguration->bootstrap(Object(Illuminate/Foundation/Application))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(494): Illuminate/Foundation/Application->bootstrapWith(Array)
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(196): Illuminate/Foundation/Console/Kernel->bootstrap()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#9 {main}
+"} 
+[2026-03-10 23:19:57] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(743): Symfony/Component/Console/Application->findNamespace('l5-swagger')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('l5-swagger:gene...')
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#6 {main}
+"} 
+[2026-03-10 23:21:17] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(743): Symfony/Component/Console/Application->findNamespace('l5-swagger')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('l5-swagger:gene...')
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#6 {main}
+"} 
+[2026-03-10 23:24:07] local.ERROR: There are no commands defined in the "l5-swagger" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"l5-swagger\" namespace. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:694)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(743): Symfony/Component/Console/Application->findNamespace('l5-swagger')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('l5-swagger:gene...')
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#6 {main}
+"} 
+[2026-03-10 23:30:13] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-10 23:32:01] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-10 23:34:07] local.ERROR: Command "make:doc" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:config
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:doc\" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:config
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:759)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('make:doc')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#5 {main}
+"} 
+[2026-03-10 23:35:59] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-10 23:38:41] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-10 23:42:25] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-10 23:44:42] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-10 23:50:18] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-10 23:51:11] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-10 23:51:25] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-10 23:51:36] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-10 23:51:48] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-10 23:58:03] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-10 23:59:03] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-11 00:00:28] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-11 00:03:48] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-11 00:04:13] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-11 00:04:30] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-11 00:05:16] local.ERROR: Required @OA\PathItem() not found {"exception":"[object] (ErrorException(code: 0): Required @OA\\PathItem() not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php:23)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(512, 'Required @OA//Pa...', 'C://Users//Laptop...', 23)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Loggers/DefaultLogger.php(23): trigger_error('Required @OA//Pa...', 512)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/psr/log/src/LoggerTrait.php(61): OpenApi/Loggers/DefaultLogger->log('warning', 'Required @OA//Pa...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Annotations/OpenApi.php(178): Psr/Log/AbstractLogger->warning('Required @OA//Pa...')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Analysis.php(392): OpenApi/Annotations/OpenApi->validate()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/zircote/swagger-php/src/Generator.php(408): OpenApi/Analysis->validate()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(177): OpenApi/Generator->generate(Object(OpenApi/SourceFinder), Object(OpenApi/Analysis))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Generator.php(118): L5Swagger/Generator->scanFilesForDocumentation()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(73): L5Swagger/Generator->generateDocs()
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/darkaonline/l5-swagger/src/Console/GenerateDocsCommand.php(56): L5Swagger/Console/GenerateDocsCommand->generateDocumentation(Object(L5Swagger/GeneratorFactory), 'default')
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): L5Swagger/Console/GenerateDocsCommand->handle(Object(L5Swagger/GeneratorFactory))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(L5Swagger/Console/GenerateDocsCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#25 {main}
+"} 
+[2026-03-11 00:07:26] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Log/LogManager.php:222)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(138): Illuminate/Log/LogManager->resolve(NULL, NULL)
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(125): Illuminate/Log/LogManager->get(NULL)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Log/LogManager.php(703): Illuminate/Log/LogManager->driver()
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(402): Illuminate/Log/LogManager->error('Class \"L5Swagge...', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Exceptions/Handler.php(365): Illuminate/Foundation/Exceptions/Handler->reportThrowable(Object(Error))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(641): Illuminate/Foundation/Exceptions/Handler->report(Object(Error))
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(200): Illuminate/Foundation/Console/Kernel->reportException(Object(Error))
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#9 {main}
+"} 
+[2026-03-11 00:07:26] laravel.ERROR: Class "L5Swagger\Generator" not found {"exception":"[object] (Error(code: 0): Class \"L5Swagger\\Generator\" not found at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/config/l5-swagger.php:166)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(115): require()
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(115): Illuminate/Foundation/Bootstrap/LoadConfiguration->{closure:Illuminate/Foundation/Bootstrap/LoadConfiguration::loadConfigurationFile():115}()
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(96): Illuminate/Foundation/Bootstrap/LoadConfiguration->loadConfigurationFile(Object(Illuminate/Config/Repository), 'l5-swagger', 'C://Users//Laptop...', Array)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/LoadConfiguration.php(55): Illuminate/Foundation/Bootstrap/LoadConfiguration->loadConfigurationFiles(Object(Illuminate/Foundation/Application), Object(Illuminate/Config/Repository))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(342): Illuminate/Foundation/Bootstrap/LoadConfiguration->bootstrap(Object(Illuminate/Foundation/Application))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(494): Illuminate/Foundation/Application->bootstrapWith(Array)
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(196): Illuminate/Foundation/Console/Kernel->bootstrap()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#9 {main}
+"} 
+[2026-03-11 14:50:37] local.ERROR: App\Modules\Mascotas\Controllers\MascotaController::show(): Argument #1 ($id) must be of type int, string given, called in C:\Users\Laptop1\OneDrive\Desktop\Arquitectura_proyecto\pawmatch-api\vendor\laravel\framework\src\Illuminate\Routing\Controller.php on line 54 {"exception":"[object] (TypeError(code: 0): App\\Modules\\Mascotas\\Controllers\\MascotaController::show(): Argument #1 ($id) must be of type int, string given, called in C:\\Users\\Laptop1\\OneDrive\\Desktop\\Arquitectura_proyecto\\pawmatch-api\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\Controller.php on line 54 at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/app/Modules/Mascotas/Controllers/MascotaController.php:73)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App/Modules/Mascotas/Controllers/MascotaController->show('ihnhiuh')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate/Routing/Controller->callAction('show', Array)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Route.php(265): Illuminate/Routing/ControllerDispatcher->dispatch(Object(Illuminate/Routing/Route), Object(App/Modules/Mascotas/Controllers/MascotaController), 'show')
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Route.php(211): Illuminate/Routing/Route->runController()
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php(822): Illuminate/Routing/Route->run()
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate/Routing/Router->{closure:Illuminate/Routing/Router::runRouteWithinStack():821}(Object(Illuminate/Http/Request))
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate/Pipeline/Pipeline->{closure:Illuminate/Pipeline/Pipeline::prepareDestination():178}(Object(Illuminate/Http/Request))
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Routing/Middleware/SubstituteBindings->handle(Object(Illuminate/Http/Request), Object(Closure))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php(821): Illuminate/Pipeline/Pipeline->then(Object(Closure))
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate/Routing/Router->runRouteWithinStack(Object(Illuminate/Routing/Route), Object(Illuminate/Http/Request))
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate/Routing/Router->runRoute(Object(Illuminate/Http/Request), Object(Illuminate/Routing/Route))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate/Routing/Router->dispatchToRoute(Object(Illuminate/Http/Request))
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate/Routing/Router->dispatch(Object(Illuminate/Http/Request))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate/Foundation/Http/Kernel->{closure:Illuminate/Foundation/Http/Kernel::dispatchToRouter():197}(Object(Illuminate/Http/Request))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate/Pipeline/Pipeline->{closure:Illuminate/Pipeline/Pipeline::prepareDestination():178}(Object(Illuminate/Http/Request))
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate/Foundation/Http/Middleware/TransformsRequest->handle(Object(Illuminate/Http/Request), Object(Closure))
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull->handle(Object(Illuminate/Http/Request), Object(Closure))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate/Foundation/Http/Middleware/TransformsRequest->handle(Object(Illuminate/Http/Request), Object(Closure))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Foundation/Http/Middleware/TrimStrings->handle(Object(Illuminate/Http/Request), Object(Closure))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Http/Middleware/ValidatePostSize->handle(Object(Illuminate/Http/Request), Object(Closure))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance->handle(Object(Illuminate/Http/Request), Object(Closure))
+#25 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(74): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#26 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Http/Middleware/HandleCors->handle(Object(Illuminate/Http/Request), Object(Closure))
+#27 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#28 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Http/Middleware/TrustProxies->handle(Object(Illuminate/Http/Request), Object(Closure))
+#29 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#30 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks->handle(Object(Illuminate/Http/Request), Object(Closure))
+#31 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#32 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Http/Middleware/ValidatePathEncoding->handle(Object(Illuminate/Http/Request), Object(Closure))
+#33 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#34 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate/Pipeline/Pipeline->then(Object(Closure))
+#35 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate/Foundation/Http/Kernel->sendRequestThroughRouter(Object(Illuminate/Http/Request))
+#36 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1220): Illuminate/Foundation/Http/Kernel->handle(Object(Illuminate/Http/Request))
+#37 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/public/index.php(20): Illuminate/Foundation/Application->handleRequest(Object(Illuminate/Http/Request))
+#38 C:/Program Files/Herd/resources/app.asar.unpacked/resources/valet/server.php(139): require('C://Users//Laptop...')
+#39 {main}
+"} 
