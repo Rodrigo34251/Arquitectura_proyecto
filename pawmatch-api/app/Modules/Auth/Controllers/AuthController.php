@@ -10,13 +10,19 @@ use App\Modules\Auth\UseCases\RegisterUserUseCase;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Validation\ValidationException;
+use App\Modules\Auth\UseCases\ForgotPasswordUseCase;
+use App\Modules\Auth\UseCases\ResetPasswordUseCase;
+use App\Modules\Auth\DTOs\ForgotPasswordDTO;
+use App\Modules\Auth\DTOs\ResetPasswordDTO;
 
 class AuthController extends Controller
 {
     // Instancia de los use cases
     public function __construct(
         private RegisterUserUseCase $registerUserUseCase,
-        private LoginUserUseCase $loginUserUseCase
+        private LoginUserUseCase $loginUserUseCase,
+        private ForgotPasswordUseCase $forgotPasswordUseCase,
+        private ResetPasswordUseCase $resetPasswordUseCase
     ) {}
 
     /**
@@ -53,7 +59,7 @@ class AuthController extends Controller
                 'message' => 'Error de validación',
                 'errors' => $e->errors()
             ], 422);
-        }// Si ocurre algún error, devolver una respuesta con el mensaje de error
+        } // Si ocurre algún error, devolver una respuesta con el mensaje de error
         catch (\Exception $e) {
             return response()->json([
                 'message' => 'Error al registrar usuario',
@@ -82,7 +88,7 @@ class AuthController extends Controller
                 'message' => 'Inicio de sesión exitoso',
                 'data' => $result
             ], 200);
-        } 
+        }
         // Si el usuario no inicio sesión correctamente, devolver una respuesta con el mensaje de error
         catch (ValidationException $e) {
             return response()->json([
@@ -130,5 +136,70 @@ class AuthController extends Controller
                 'rol' => $request->user()->rol,
             ]
         ], 200);
+    }
+
+    /**
+     * Solicitar restablecimiento de contraseña
+     */
+    public function forgotPassword(Request $request): JsonResponse
+    {
+        try {
+            // Validar los datos enviados en la petición
+            $validated = $request->validate([
+                'email' => 'required|string|email',
+            ]);
+
+            // Crear el dto para el use case
+            $dto = ForgotPasswordDTO::fromRequest($validated);
+            // Llamar al use case
+            $result = $this->forgotPasswordUseCase->execute($dto);
+
+            return response()->json($result, 200);
+        } // Si ocurre algún error, devolver una respuesta con el mensaje de error
+        catch (ValidationException $e) {
+            return response()->json([
+                'message' => 'Error de validación',
+                'errors' => $e->errors()
+            ], 422);
+        }
+        catch (\Exception $e) {
+            return response()->json([
+                'message' => 'Error al procesar la solicitud',
+                'error' => $e->getMessage()
+            ], 500);
+        }
+    }
+
+    /**
+     * Restablecer contraseña
+     */
+    public function resetPassword(Request $request): JsonResponse
+    {
+        try {
+            // Validar los datos enviados en la petición
+            $validated = $request->validate([
+                'token' => 'required|string',
+                'email' => 'required|string|email',
+                'password' => 'required|string|min:8|confirmed',
+            ]);
+
+            // Crear el dto para el use case
+            $dto = ResetPasswordDTO::fromRequest($validated);
+            //Mandar el resultado y ejecutar el use case
+            $result = $this->resetPasswordUseCase->execute($dto);
+
+            return response()->json($result, 200);
+        } // Si ocurre algún error, devolver una respuesta con el mensaje de error
+        catch (ValidationException $e) {
+            return response()->json([
+                'message' => 'Error de validación',
+                'errors' => $e->errors()
+            ], 422);
+        } catch (\Exception $e) {
+            return response()->json([
+                'message' => 'Error al restablecer contraseña',
+                'error' => $e->getMessage()
+            ], 500);
+        }
     }
 }
