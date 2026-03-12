@@ -14,6 +14,8 @@ use App\Modules\Auth\UseCases\ForgotPasswordUseCase;
 use App\Modules\Auth\UseCases\ResetPasswordUseCase;
 use App\Modules\Auth\DTOs\ForgotPasswordDTO;
 use App\Modules\Auth\DTOs\ResetPasswordDTO;
+use App\Modules\Auth\DTOs\UpdateProfileDTO;
+use App\Modules\Auth\UseCases\UpdateProfileUseCase;
 
 class AuthController extends Controller
 {
@@ -22,7 +24,8 @@ class AuthController extends Controller
         private RegisterUserUseCase $registerUserUseCase,
         private LoginUserUseCase $loginUserUseCase,
         private ForgotPasswordUseCase $forgotPasswordUseCase,
-        private ResetPasswordUseCase $resetPasswordUseCase
+        private ResetPasswordUseCase $resetPasswordUseCase,
+        private UpdateProfileUseCase $updateProfileUseCase
     ) {}
 
     /**
@@ -139,6 +142,42 @@ class AuthController extends Controller
     }
 
     /**
+     * Actualizar perfil del usuario autenticado
+     */
+    public function updateProfile(Request $request): JsonResponse
+    {
+        try {
+            // Validar los datos enviados en la petición
+            $validated = $request->validate([
+                'nombre' => 'sometimes|string|max:255',
+                'telefono' => 'nullable|string|max:20',
+                'direccion' => 'nullable|string|max:500',
+            ]);
+
+            // Crear el dto para validar y actualizar el perfil
+            $dto = UpdateProfileDTO::fromRequest($validated);
+            // Llamar al use case dependiendo del resultado
+            $result = $this->updateProfileUseCase->execute($request->user(), $dto);
+
+            return response()->json([
+                'message' => 'Perfil actualizado exitosamente',
+                'data' => $result
+            ], 200);
+        } // Si ocurre algún error, devolver una respuesta con el mensaje de error
+        catch (ValidationException $e) {
+            return response()->json([
+                'message' => 'Error de validación',
+                'errors' => $e->errors()
+            ], 422);
+        } catch (\Exception $e) {
+            return response()->json([
+                'message' => 'Error al actualizar perfil',
+                'error' => $e->getMessage()
+            ], 500);
+        }
+    }
+
+    /**
      * Solicitar restablecimiento de contraseña
      */
     public function forgotPassword(Request $request): JsonResponse
@@ -161,8 +200,7 @@ class AuthController extends Controller
                 'message' => 'Error de validación',
                 'errors' => $e->errors()
             ], 422);
-        }
-        catch (\Exception $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'message' => 'Error al procesar la solicitud',
                 'error' => $e->getMessage()
