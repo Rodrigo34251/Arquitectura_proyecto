@@ -3016,3 +3016,94 @@ Did you mean one of these?
 #33 C:/Program Files/Herd/resources/app.asar.unpacked/resources/valet/server.php(139): require('C://Users//Laptop...')
 #34 {main}
 "} 
+[2026-03-13 03:05:27] local.INFO: Email enviado: Solicitud creada {"solicitud_id":1,"destinatario":"admin@pawmatch.com"} 
+[2026-03-13 03:05:44] local.INFO: Email enviado: Solicitud aprobada {"solicitud_id":1,"destinatario":"admin@pawmatch.com"} 
+[2026-03-13 15:50:23] local.INFO: Email enviado: Solicitud creada {"solicitud_id":2,"destinatario":"juan@gmail.com"} 
+[2026-03-13 16:10:40] local.ERROR: Command "make:cors" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:config
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"make:cors\" is not defined.
+
+Did you mean one of these?
+    make:cache-table
+    make:cast
+    make:channel
+    make:class
+    make:command
+    make:component
+    make:config
+    make:controller
+    make:enum
+    make:event
+    make:exception
+    make:factory
+    make:interface
+    make:job
+    make:job-middleware
+    make:listener
+    make:mail
+    make:middleware
+    make:migration
+    make:model
+    make:notification
+    make:notifications-table
+    make:observer
+    make:policy
+    make:provider
+    make:queue-batches-table
+    make:queue-failed-table
+    make:queue-table
+    make:request
+    make:resource
+    make:rule
+    make:scope
+    make:seeder
+    make:session-table
+    make:test
+    make:trait
+    make:view at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:759)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('make:cors')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#5 {main}
+"} 
+[2026-03-13 16:57:49] local.INFO: Email enviado: Solicitud rechazada {"solicitud_id":2,"destinatario":"juan@gmail.com"} 

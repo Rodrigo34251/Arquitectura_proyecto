@@ -99,7 +99,7 @@ class SolicitudController extends Controller
     {
         try {
             // Autorizar el usuario para ver las solicitudes
-            $this->authorize('updateEstado', SolicitudAdopcion::class);
+            $this->authorize('viewAny', SolicitudAdopcion::class);
 
             // Validar las solicitudes (todas)
             $validated = $request->validate([
@@ -167,7 +167,7 @@ class SolicitudController extends Controller
     {
         try {
             // Verificar la autorización para aprobar la solicitud
-            $this->authorize('updateEstado', SolicitudAdopcion::class);
+            $this->authorize('manage', SolicitudAdopcion::class);
 
             // Aprobar la solicitud
             $result = $this->aprobarSolicitudUseCase->execute($id, $request->user()->id);
@@ -208,7 +208,7 @@ class SolicitudController extends Controller
     {
         try {
             // Verificar la autorización para rechazar la solicitud
-            $this->authorize('updateEstado', SolicitudAdopcion::class);
+            $this->authorize('manage', SolicitudAdopcion::class);
 
             // Validar los datos enviados (motivo de rechazo)
             $validated = $request->validate([

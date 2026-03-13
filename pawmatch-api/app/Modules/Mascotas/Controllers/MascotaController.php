@@ -105,10 +105,8 @@ class MascotaController extends Controller
     public function store(Request $request): JsonResponse
     {
         try {
-            // Autorizar el caso de uso para crear una mascota
             $this->authorize('create', Mascota::class);
 
-            // Validar los datos enviados
             $validated = $request->validate([
                 'nombre' => 'required|string|max:255',
                 'especie' => 'required|in:PERRO,GATO,OTRO',
@@ -120,52 +118,44 @@ class MascotaController extends Controller
                 'estado' => 'nullable|in:DISPONIBLE,EN_PROCESO,ADOPTADA,INACTIVA',
             ]);
 
-            // Si el caso de uso recibe un archivo, guardarlo en la base de datos
+            // ✅ Guardar solo el path, no la URL completa
             if ($request->hasFile('foto')) {
                 $path = $request->file('foto')->store('mascotas', 'public');
-                $validated['foto_url'] = Storage::url($path);
+                $validated['foto'] = $path;  // 👈 Cambiar foto_url a foto
             }
-            // Crear objeto de DTO a partir de los datos validados
+
             $dto = CreateMascotaDTO::fromRequest($validated);
             $result = $this->createMascotaUseCase->execute($dto);
 
-            // Devolver respuesta con el resultado
             return response()->json([
                 'message' => 'Mascota creada exitosamente',
                 'data' => $result
             ], 201);
-        } // Devolver error si no está autorizado
-        catch (\Illuminate\Auth\Access\AuthorizationException $e) {
+        } catch (\Illuminate\Auth\Access\AuthorizationException $e) {
             return response()->json([
                 'message' => 'No autorizado. Se requiere rol de administrador.'
             ], 403);
-        } // Devolver error de validación
-        catch (ValidationException $e) {
+        } catch (ValidationException $e) {
             return response()->json([
                 'message' => 'Error de validación',
                 'errors' => $e->errors()
             ], 422);
-        } // Devolver error en caso de error del servidor
-        catch (\Exception $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'message' => 'Error al crear mascota',
                 'error' => $e->getMessage()
             ], 500);
         }
     }
-
     /**
      * Actualizar mascota 
      */
     public function update(Request $request, int $id): JsonResponse
     {
         try {
-            // Obtener la mascota
             $mascota = Mascota::findOrFail($id);
-            // Verificar si el usuario está autorizado para actualizar la mascota
             $this->authorize('update', $mascota);
 
-            // Validar los datos enviados
             $validated = $request->validate([
                 'nombre' => 'sometimes|string|max:255',
                 'especie' => 'sometimes|in:PERRO,GATO,OTRO',
@@ -177,21 +167,18 @@ class MascotaController extends Controller
                 'estado' => 'sometimes|in:DISPONIBLE,EN_PROCESO,ADOPTADA,INACTIVA',
             ]);
 
-            // Si el caso de uso recibe un archivo, guardarlo en la base de datos
+            // ✅ Manejar actualización de foto
             if ($request->hasFile('foto')) {
-
-                // Si la mascota tiene una foto, borrarla
-                if ($mascota->foto_url) {
-                    $oldPath = str_replace('/storage', 'public', $mascota->foto_url);
-                    Storage::delete($oldPath);
+                // Eliminar foto anterior si existe
+                if ($mascota->foto) {
+                    Storage::disk('public')->delete($mascota->foto);
                 }
-                // Guardar el nuevo archivo en la base de datos
 
+                // Guardar nueva foto
                 $path = $request->file('foto')->store('mascotas', 'public');
-                $validated['foto_url'] = Storage::url($path);
+                $validated['foto'] = $path;  // 👈 Cambiar foto_url a foto
             }
 
-            // Crear objeto de DTO a partir de los datos validados
             $dto = UpdateMascotaDTO::fromRequest($validated);
             $result = $this->updateMascotaUseCase->execute($id, $dto);
 
@@ -199,24 +186,20 @@ class MascotaController extends Controller
                 'message' => 'Mascota actualizada exitosamente',
                 'data' => $result
             ], 200);
-        } // Devolver error si no está autorizado
-        catch (\Illuminate\Auth\Access\AuthorizationException $e) {
+        } catch (\Illuminate\Auth\Access\AuthorizationException $e) {
             return response()->json([
                 'message' => 'No autorizado. Se requiere rol de administrador.'
             ], 403);
-        } // Devolver error si no existe
-        catch (ModelNotFoundException $e) {
+        } catch (ModelNotFoundException $e) {
             return response()->json([
                 'message' => 'Mascota no encontrada'
             ], 404);
-        } // Devolver error de validación
-        catch (ValidationException $e) {
+        } catch (ValidationException $e) {
             return response()->json([
                 'message' => 'Error de validación',
                 'errors' => $e->errors()
             ], 422);
-        } // Devolver error en caso de error del servidor
-        catch (\Exception $e) {
+        } catch (\Exception $e) {
             return response()->json([
                 'message' => 'Error al actualizar mascota',
                 'error' => $e->getMessage()

@@ -12,7 +12,7 @@ class CreateMascotaDTO
         public readonly ?int $edad_aproximada = null,
         public readonly ?string $sexo = null,
         public readonly ?string $descripcion = null,
-        public readonly ?string $foto_url = null,
+        public readonly ?string $foto = null,
         public readonly string $estado = 'DISPONIBLE'
     ) {}
 
@@ -26,7 +26,7 @@ class CreateMascotaDTO
             edad_aproximada: isset($data['edad_aproximada']) ? (int) $data['edad_aproximada'] : null,
             sexo: $data['sexo'] ?? null,
             descripcion: $data['descripcion'] ?? null,
-            foto_url: $data['foto_url'] ?? null,  
+            foto: $data['foto'] ?? null,  
             estado: $data['estado'] ?? 'DISPONIBLE'
         );
     }
@@ -40,7 +40,7 @@ class CreateMascotaDTO
             'edad_aproximada' => $this->edad_aproximada,
             'sexo' => $this->sexo,
             'descripcion' => $this->descripcion,
-            'foto_url' => $this->foto_url,
+            'foto' => $this->foto,
             'estado' => $this->estado,
         ];
     }

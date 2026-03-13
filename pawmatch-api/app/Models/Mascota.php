@@ -10,8 +10,7 @@ class Mascota extends Model
 {
     use HasFactory, SoftDeletes;
 
-    //Atributos de la tabla
-
+    // Atributos que se pueden asignar masivamente
     protected $fillable = [
         'nombre',
         'especie',
@@ -19,16 +18,19 @@ class Mascota extends Model
         'edad_aproximada',
         'sexo',
         'descripcion',
-        'foto_url',
+        'foto',       
         'estado'
     ];
-     
+
     protected $casts = [
         'edad_aproximada' => 'integer',
     ];
 
+    // Agregar foto_url como atributo virtual
+    protected $appends = ['foto_url'];
+
     // Relaciones
-     public function solicitudes()
+    public function solicitudes()
     {
         return $this->hasMany(SolicitudAdopcion::class);
     }
@@ -49,4 +51,20 @@ class Mascota extends Model
         $this->update(['estado' => 'ADOPTADA']);
     }
 
+    // Accessor para generar la URL completa de la foto
+    public function getFotoUrlAttribute(): ?string
+    {
+        // Si no hay foto guardada, retornar null
+        if (!$this->foto) {
+            return null;
+        }
+
+        // Si ya es una URL completa, devolverla tal cual
+        if (filter_var($this->foto, FILTER_VALIDATE_URL)) {
+            return $this->foto;
+        }
+
+        // Generar la URL completa usando la configuración de la app
+        return config('app.url') . '/storage/' . $this->foto;
+    }
 }
