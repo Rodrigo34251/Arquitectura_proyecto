@@ -22,13 +22,12 @@ class ListAllSolicitudesUseCase
         'estado' => $solicitud->estado,
         'comentarios_adoptante' => $solicitud->comentarios_adoptante,
         'motivo_rechazo' => $solicitud->motivo_rechazo,
-        'adoptante' => $solicitud->user ? [   // ✅ null-check aquí
-            'id' => $solicitud->user->id,
+        'adoptante' => $solicitud->user ? [  
             'nombre' => $solicitud->user->nombre,
             'email' => $solicitud->user->email,
             'telefono' => $solicitud->user->telefono,
         ] : null,
-        'mascota' => $solicitud->mascota ? [   // ✅ null-check aquí
+        'mascota' => $solicitud->mascota ? [   
             'id' => $solicitud->mascota->id,
             'nombre' => $solicitud->mascota->nombre,
             'especie' => $solicitud->mascota->especie,

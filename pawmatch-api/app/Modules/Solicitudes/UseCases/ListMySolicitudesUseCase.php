@@ -22,7 +22,7 @@ class ListMySolicitudesUseCase
         'estado' => $solicitud->estado,
         'comentarios_adoptante' => $solicitud->comentarios_adoptante,
         'motivo_rechazo' => $solicitud->motivo_rechazo,
-        'mascota' => $solicitud->mascota ? [   // ✅ null-check aquí
+        'mascota' => $solicitud->mascota ? [   
             'id' => $solicitud->mascota->id,
             'nombre' => $solicitud->mascota->nombre,
             'especie' => $solicitud->mascota->especie,
