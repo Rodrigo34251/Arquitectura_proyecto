@@ -18,7 +18,8 @@ export const UserDashboardPage = () => {
     try {
       setLoading(true);
       const response = await solicitudService.getMySolicitudes();
-      setSolicitudes(response.data);
+      // Nos aseguramos que siempre sea una lista
+      setSolicitudes(Array.isArray(response.data) ? response.data : []);
     } catch (err) {
       console.error('Error cargando solicitudes:', err);
       setError('Error al cargar tus solicitudes');
@@ -27,43 +28,27 @@ export const UserDashboardPage = () => {
     }
   };
 
-  const getEstadoConfig = (estado) => {
+  // 1. FUNCIÓN DE SEGURIDAD (El Filtro de Titanio)
+  // Esta función evita el error de "Objects are not valid as a React child"
+  // Si detecta un objeto donde debería haber texto, lo ignora y devuelve vacío.
+  const safe = (value) => {
+    if (typeof value === 'object' && value !== null) return ''; 
+    return value || '';
+  };
+
+  const getEstadoConfig = (estadoRaw) => {
+    const estado = safe(estadoRaw); // Filtramos el estado primero
     switch (estado) {
       case 'PENDIENTE':
-        return {
-          icon: Clock,
-          bg: 'bg-yellow-100',
-          text: 'text-yellow-700',
-          label: 'Pendiente',
-        };
+        return { icon: Clock, bg: 'bg-yellow-100', text: 'text-yellow-700', label: 'Pendiente' };
       case 'EN_REVISION':
-        return {
-          icon: Clock,
-          bg: 'bg-blue-100',
-          text: 'text-blue-700',
-          label: 'En Revisión',
-        };
+        return { icon: Clock, bg: 'bg-blue-100', text: 'text-blue-700', label: 'En Revisión' };
       case 'APROBADA':
-        return {
-          icon: CheckCircle,
-          bg: 'bg-green-100',
-          text: 'text-green-700',
-          label: 'Aprobada',
-        };
+        return { icon: CheckCircle, bg: 'bg-green-100', text: 'text-green-700', label: 'Aprobada' };
       case 'RECHAZADA':
-        return {
-          icon: XCircle,
-          bg: 'bg-red-100',
-          text: 'text-red-700',
-          label: 'Rechazada',
-        };
+        return { icon: XCircle, bg: 'bg-red-100', text: 'text-red-700', label: 'Rechazada' };
       default:
-        return {
-          icon: Clock,
-          bg: 'bg-gray-100',
-          text: 'text-gray-700',
-          label: estado,
-        };
+        return { icon: Clock, bg: 'bg-gray-100', text: 'text-gray-700', label: estado || 'Pendiente' };
     }
   };
 
@@ -78,20 +63,20 @@ export const UserDashboardPage = () => {
   return (
     <div className="container mx-auto px-6 py-10 max-w-4xl">
 
-      {/* Saludo personalizado */}
+      {/* Saludo */}
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8 flex items-center gap-4">
         <div className="bg-primary-100 p-4 rounded-full text-primary-600">
           <User className="w-8 h-8" />
         </div>
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Hola, {user?.nombre}</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Hola, {safe(user?.nombre)}</h1>
           <p className="text-gray-500">Bienvenido a tu panel de adoptante</p>
         </div>
       </div>
 
       {error && (
         <div className="mb-6 bg-red-50 border border-red-200 text-red-700 p-4 rounded-lg">
-          {error}
+          {safe(error)}
         </div>
       )}
 
@@ -100,53 +85,38 @@ export const UserDashboardPage = () => {
         Mis Solicitudes de Adopción
       </h2>
 
-      {/* Lista de solicitudes */}
       <div className="space-y-4">
         {solicitudes.length === 0 ? (
           <div className="text-center bg-white p-10 rounded-2xl border border-dashed border-gray-300">
-            <p className="text-gray-500 mb-4">
-              Aún no has solicitado adoptar a ningún peludito.
-            </p>
-            <Link
-              to="/pets"
-              className="text-primary-600 font-bold hover:underline"
-            >
-              Ir al catálogo de mascotas
-            </Link>
+            <p className="text-gray-500 mb-4">Aún no tienes solicitudes.</p>
+            <Link to="/pets" className="text-primary-600 font-bold hover:underline">Ir al catálogo</Link>
           </div>
         ) : (
-          solicitudes.map(solicitud => {
+          solicitudes.map((solicitud, index) => {
             const estadoConfig = getEstadoConfig(solicitud.estado);
             const IconoEstado = estadoConfig.icon;
 
             return (
-              <div
-                key={solicitud.id}
-                className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition"
-              >
+              <div key={solicitud.id || index} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition">
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 
-                  {/* Info de la mascota */}
+                  {/* Info Mascota */}
                   <div className="flex items-center gap-4">
                     <div className="w-20 h-20 bg-gray-200 rounded-xl overflow-hidden flex-shrink-0">
                       <img
                         src={solicitud.mascota?.foto_url || '/images/pets/default.jpg'}
-                        alt={solicitud.mascota?.nombre}
+                        alt={safe(solicitud.mascota?.nombre)}
                         className="w-full h-full object-cover"
-                        onError={(e) => {
-                          e.target.src = '/images/pets/default.jpg';
-                        }}
+                        onError={(e) => { e.target.src = '/images/pets/default.jpg'; }}
                       />
                     </div>
                     <div>
-                      <h3 className="font-bold text-lg text-gray-900">
-                        {solicitud.mascota?.nombre}
-                      </h3>
+                      <h3 className="font-bold text-lg text-gray-900">{safe(solicitud.mascota?.nombre)}</h3>
                       <p className="text-sm text-gray-500">
-                        {solicitud.mascota?.especie} • {solicitud.mascota?.raza || 'Mestizo'}
+                        {safe(solicitud.mascota?.especie)} • {safe(solicitud.mascota?.raza) || 'Mestizo'}
                       </p>
                       <p className="text-xs text-gray-400 mt-1">
-                        Solicitado: {new Date(solicitud.created_at).toLocaleDateString('es-SV')}
+                        Solicitado: {solicitud.created_at ? new Date(solicitud.created_at).toLocaleDateString('es-SV') : 'Hoy'}
                       </p>
                     </div>
                   </div>
@@ -155,22 +125,21 @@ export const UserDashboardPage = () => {
                   <div className="text-right">
                     <span className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold ${estadoConfig.bg} ${estadoConfig.text}`}>
                       <IconoEstado className="w-4 h-4" />
-                      {estadoConfig.label}
+                      {safe(estadoConfig.label)}
                     </span>
-
                     {solicitud.motivo_rechazo && (
                       <p className="text-xs text-red-600 mt-2 max-w-xs">
-                        Motivo: {solicitud.motivo_rechazo}
+                        Motivo: {safe(solicitud.motivo_rechazo)}
                       </p>
                     )}
                   </div>
                 </div>
 
-                {/* Comentarios */}
+                {/* Comentarios Seguros */}
                 {solicitud.comentarios_adoptante && (
                   <div className="mt-4 pt-4 border-t border-gray-100">
                     <p className="text-sm text-gray-600">
-                      <span className="font-semibold">Tus comentarios:</span> {solicitud.comentarios_adoptante}
+                      <span className="font-semibold">Tus comentarios:</span> {safe(solicitud.comentarios_adoptante)}
                     </p>
                   </div>
                 )}

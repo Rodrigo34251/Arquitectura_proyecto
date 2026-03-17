@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { useAuth } from '../hooks/useAuth';
 import { MainLayout } from '../shared/layouts/MainLayout';
 
-
 // Páginas
 import { PetDetailPage } from '../modules/pets/pages/PetDetailPage';
 import { LoginPage } from '../modules/auth/pages/LoginPage';
@@ -12,6 +11,7 @@ import { ResetPasswordPage } from '../modules/auth/pages/ResetPasswordPage';
 import { CatalogPage } from '../modules/pets/pages/CatalogPage';
 import { AdminDashboardPage } from '../modules/admin/pages/AdminDashboardPage';
 import { UserDashboardPage } from '../modules/user/pages/UserDashboardPage';
+import { UserProfile } from '../modules/user/pages/UserProfile'; // La ruta que importaste
 
 // Guardia de Ruta Protegida
 const ProtectedRoute = ({ children, adminOnly = false }) => {
@@ -60,7 +60,10 @@ export const AppRouter = () => {
           <Route path="/forgot-password" element={<ForgotPasswordPage />} />
           <Route path="/reset-password" element={<ResetPasswordPage />} />
 
-          {/* Usuario autenticado */}
+          {/* ========================================= */}
+          {/* ZONA DE USUARIO AUTENTICADO */}
+          {/* ========================================= */}
+          
           <Route
             path="/user/dashboard"
             element={
@@ -69,6 +72,18 @@ export const AppRouter = () => {
               </ProtectedRoute>
             }
           />
+
+          {/* nueva ruta de user profile */}
+          <Route
+            path="/user/profile"
+            element={
+              <ProtectedRoute>
+                <UserProfile />
+              </ProtectedRoute>
+            }
+          />
+
+          {/* ========================================= */}
 
           {/* Admin */}
           <Route

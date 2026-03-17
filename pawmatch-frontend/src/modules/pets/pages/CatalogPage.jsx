@@ -1,30 +1,34 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import mascotaService from '../../../services/mascotaService';
-import { Search, SlidersHorizontal } from 'lucide-react';
+import { useAuth } from '../../../hooks/useAuth'; // importamos el hook de autenticacion
+import { Search, SlidersHorizontal, Heart, ShieldCheck } from 'lucide-react'; //
 
 export const CatalogPage = () => {
+  // extraemos los datos del usuario logueado Y la funcion isAdmin
+  const { user, isAuthenticated, isAdmin } = useAuth();
+
   const [pets, setPets] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
   
-  // Filtros
+  // filtros
   const [filters, setFilters] = useState({
     especie: '',
     sexo: '',
     search: '',
   });
 
-  // Estado temporal para el input (para evitar llamadas constantes)
+  // estado temporal para el input
   const [searchInput, setSearchInput] = useState('');
   const [showFilters, setShowFilters] = useState(false);
 
-  // Cargar mascotas cuando cambian los filtros (excepto search)
+  // cargar mascotas cuando cambian los filtros principales
   useEffect(() => {
     fetchPets();
   }, [filters.especie, filters.sexo]);
 
-  // Debounce para la búsqueda 
+  // retraso para la barra de busqueda
   useEffect(() => {
     const timer = setTimeout(() => {
       setFilters(prev => ({ ...prev, search: searchInput }));
@@ -33,7 +37,7 @@ export const CatalogPage = () => {
     return () => clearTimeout(timer);
   }, [searchInput]);
 
-  // Cargar mascotas cuando cambia el filtro de búsqueda
+  // cargar mascotas cuando cambia el filtro de texto
   useEffect(() => {
     if (filters.search !== undefined) {
       fetchPets();
@@ -75,7 +79,28 @@ export const CatalogPage = () => {
   return (
     <div className="container mx-auto px-6 py-8 max-w-7xl">
       
-      {/* Cabecera */}
+      {/* banner de bienvenida condicional segun el rol */}
+      {isAuthenticated() && user && (
+        <div className="bg-primary-50 rounded-2xl p-6 mb-8 border border-primary-100 flex items-center gap-4 shadow-sm">
+          <div className="bg-white p-3 rounded-full text-primary-600 shadow-sm">
+            {/* si es admin mostramos un escudo, si no, un corazon */}
+            {isAdmin() ? <ShieldCheck className="w-8 h-8" /> : <Heart className="w-8 h-8" />}
+          </div>
+          <div>
+            <h2 className="text-2xl font-bold text-gray-900">
+              ¡Hola, {user.nombre}! Bienvenido a PawMatch.
+            </h2>
+            <p className="text-gray-600 mt-1">
+              {/* mensaje diferente segun el rol */}
+              {isAdmin() 
+                ? 'Gestiona el catálogo de mascotas y revisa las solicitudes pendientes de hoy.' 
+                : 'Esperamos que hoy encuentres a tu nuevo mejor amigo.'}
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* cabecera */}
       <div className="mb-8">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900">
           Mascotas en Adopción
@@ -85,11 +110,11 @@ export const CatalogPage = () => {
         </p>
       </div>
 
-      {/* Barra de búsqueda y filtros */}
+      {/* barra de busqueda y filtros */}
       <div className="mb-8 bg-white p-4 rounded-xl shadow-sm border border-gray-100">
         <div className="flex flex-col md:flex-row gap-4">
           
-          {/* Búsqueda */}
+          {/* busqueda */}
           <div className="flex-1 relative">
             <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-5 h-5" />
             <input
@@ -101,7 +126,7 @@ export const CatalogPage = () => {
             />
           </div>
 
-          {/* Botón de filtros */}
+          {/* boton de filtros */}
           <button
             onClick={() => setShowFilters(!showFilters)}
             className="flex items-center gap-2 px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg font-medium transition"
@@ -111,11 +136,11 @@ export const CatalogPage = () => {
           </button>
         </div>
 
-        {/* Filtros expandibles */}
+        {/* filtros expandibles */}
         {showFilters && (
           <div className="mt-4 pt-4 border-t border-gray-200 grid grid-cols-1 md:grid-cols-3 gap-4">
             
-            {/* Especie */}
+            {/* especie */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Especie
@@ -132,7 +157,7 @@ export const CatalogPage = () => {
               </select>
             </div>
 
-            {/* Sexo */}
+            {/* sexo */}
             <div>
               <label className="block text-sm font-medium text-gray-700 mb-1">
                 Sexo
@@ -148,7 +173,7 @@ export const CatalogPage = () => {
               </select>
             </div>
 
-            {/* Limpiar filtros */}
+            {/* limpiar filtros */}
             <div className="flex items-end">
               <button
                 onClick={clearFilters}
@@ -161,21 +186,21 @@ export const CatalogPage = () => {
         )}
       </div>
 
-      {/* Indicador de carga mientras filtra */}
+      {/* indicador de carga mientras filtra */}
       {loading && pets.length > 0 && (
         <div className="text-center py-4">
           <div className="inline-block animate-spin rounded-full h-8 w-8 border-b-2 border-primary-600"></div>
         </div>
       )}
 
-      {/* Mensaje de error */}
+      {/* mensaje de error */}
       {error && (
         <div className="mb-6 bg-red-50 border border-red-200 text-red-700 p-4 rounded-lg">
           {error}
         </div>
       )}
 
-      {/* Grid de Tarjetas */}
+      {/* grid de tarjetas */}
       {pets.length === 0 && !loading ? (
         <div className="text-center py-12">
           <p className="text-gray-500 text-lg">
@@ -190,7 +215,7 @@ export const CatalogPage = () => {
               className="bg-white rounded-2xl shadow-sm border border-gray-100 overflow-hidden hover:shadow-lg transition-all duration-300 flex flex-col"
             >
               
-              {/* Imagen */}
+              {/* imagen */}
               <div className="h-56 w-full relative">
                 <img 
                   src={pet.foto_url || '/images/pets/default.jpg'} 
@@ -201,7 +226,7 @@ export const CatalogPage = () => {
                   }}
                 />
                 
-                {/* Etiqueta de estado */}
+                {/* etiqueta de estado */}
                 <span className={`absolute top-4 right-4 px-3 py-1 rounded-full text-xs font-bold shadow-sm ${
                   pet.estado === 'DISPONIBLE' ? 'bg-green-500 text-white' :
                   pet.estado === 'ADOPTADA' ? 'bg-gray-500 text-white' : 
@@ -213,7 +238,7 @@ export const CatalogPage = () => {
                 </span>
               </div>
 
-              {/* Contenido */}
+              {/* contenido */}
               <div className="p-6 flex-grow flex flex-col">
                 <h2 className="text-2xl font-bold text-gray-800 mb-1">
                   {pet.nombre}
@@ -225,7 +250,7 @@ export const CatalogPage = () => {
                   {pet.descripcion}
                 </p>
                 
-                {/* Botón */}
+                {/* boton de detalle */}
                 <div className="mt-auto pt-4">
                   <Link
                     to={`/pets/${pet.id}`}

@@ -3152,3 +3152,53 @@ Did you mean one of these?
 #38 C:/Program Files/Herd/resources/app.asar.unpacked/resources/valet/server.php(139): require('C://Users//Laptop...')
 #39 {main}
 "} 
+[2026-03-16 22:38:14] production.ERROR: file_get_contents(C:\Arquitectura_proyecto\pawmatch-api\.env): Failed to open stream: No such file or directory {"exception":"[object] (ErrorException(code: 0): file_get_contents(C:\\Arquitectura_proyecto\\pawmatch-api\\.env): Failed to open stream: No such file or directory at C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php:100)
+[stacktrace]
+#0 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Bootstrap/HandleExceptions.php(258): Illuminate/Foundation/Bootstrap/HandleExceptions->handleError(2, 'file_get_conten...', 'C://Arquitectura...', 100)
+#1 [internal function]: Illuminate/Foundation/Bootstrap/HandleExceptions->{closure:Illuminate/Foundation/Bootstrap/HandleExceptions::forwardsTo():257}(2, 'file_get_conten...', 'C://Arquitectura...', 100)
+#2 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(100): file_get_contents('C://Arquitectura...')
+#3 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(82): Illuminate/Foundation/Console/KeyGenerateCommand->writeNewEnvironmentFileWith('base64:E3MOt+uR...')
+#4 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/KeyGenerateCommand.php(47): Illuminate/Foundation/Console/KeyGenerateCommand->setKeyInEnvironmentFile('base64:E3MOt+uR...')
+#5 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Foundation/Console/KeyGenerateCommand->handle()
+#6 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#7 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#8 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#9 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#10 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#11 C:/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#12 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#13 C:/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#14 C:/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Foundation/Console/KeyGenerateCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#15 C:/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#16 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#17 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#18 C:/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#19 {main}
+"} 
+[2026-03-16 22:44:51] local.ERROR: Command "server" is not defined.
+
+Did you mean one of these?
+    make:observer
+    serve {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"server\" is not defined.
+
+Did you mean one of these?
+    make:observer
+    serve at C:/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:759)
+[stacktrace]
+#0 C:/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('server')
+#1 C:/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#2 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#5 {main}
+"} 
+[2026-03-16 23:05:21] local.ERROR: Error al enviar email: Solicitud creada {"solicitud_id":1,"error":"Connection to \"sandbox.smtp.mailtrap.io:2525\" has been closed unexpectedly."} 
+[2026-03-16 23:20:24] local.ERROR: Error al enviar email: Solicitud rechazada {"solicitud_id":1,"error":"Connection to \"sandbox.smtp.mailtrap.io:2525\" has been closed unexpectedly."} 
+[2026-03-16 23:39:23] local.ERROR: Error al enviar email: Solicitud creada {"solicitud_id":2,"error":"Connection to \"sandbox.smtp.mailtrap.io:2525\" has been closed unexpectedly."} 
+[2026-03-16 23:41:17] local.ERROR: Error al enviar email: Solicitud rechazada {"solicitud_id":2,"error":"Connection could not be established with host \"ssl://sandbox.smtp.mailtrap.io:465\": stream_socket_client(): SSL: An existing connection was forcibly closed by the remote host"} 
+[2026-03-16 23:44:43] local.ERROR: Error al enviar email: Solicitud creada {"solicitud_id":3,"error":"Connection to \"sandbox.smtp.mailtrap.io:2525\" has been closed unexpectedly."} 
+[2026-03-17 05:10:19] local.INFO: Email enviado: Solicitud aprobada {"solicitud_id":3,"destinatario":"fraauda004@gmail.com"} 
+[2026-03-17 05:29:19] local.INFO: Email enviado: Solicitud creada {"solicitud_id":4,"destinatario":"fraauda004@gmail.com"} 
+[2026-03-17 05:46:24] local.INFO: Email enviado: Solicitud rechazada {"solicitud_id":4,"destinatario":"fraauda004@gmail.com"} 
+[2026-03-17 06:17:37] local.INFO: Email enviado: Solicitud creada {"solicitud_id":5,"destinatario":"fraauda004@gmail.com"} 
+[2026-03-17 06:40:21] local.INFO: Email enviado: Solicitud rechazada {"solicitud_id":5,"destinatario":"fraauda004@gmail.com"} 

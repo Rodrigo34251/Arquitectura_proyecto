@@ -1,10 +1,11 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { useAuth } from '../../hooks/useAuth';
-import { LogOut, PawPrint, User, LayoutDashboard, Menu, X } from 'lucide-react';
+import { LogOut, PawPrint, Menu, X, FileText, User, LayoutDashboard } from 'lucide-react';
 
 export const Navbar = () => {
-  const { user, isAuthenticated, isAdmin, logout } = useAuth();
+  // traemos isAdmin para saber si es el jefe o un usuario normal
+  const { isAuthenticated, isAdmin, logout } = useAuth();
   const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -22,7 +23,7 @@ export const Navbar = () => {
     <nav className="bg-white shadow-md border-b border-gray-100 relative z-50">
       <div className="container mx-auto px-6 py-4 flex items-center justify-between">
 
-        {/* Logo */}
+        {/* logo */}
         <Link to="/" className="flex items-center gap-2">
           <PawPrint className="text-primary-600 w-8 h-8" />
           <span className="text-2xl font-bold text-gray-900">
@@ -30,7 +31,7 @@ export const Navbar = () => {
           </span>
         </Link>
 
-        {/* Botón hamburguesa (móvil) */}
+        {/* boton hamburguesa para moviles */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
           className="md:hidden p-2 text-gray-600 hover:text-primary-600 transition"
@@ -39,46 +40,55 @@ export const Navbar = () => {
           {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
 
-        {/* Menú desktop */}
+        {/* menu para pantallas grandes */}
         <div className="hidden md:flex items-center gap-6 text-gray-700 font-medium">
-          <Link to="/pets" className="hover:text-primary-600 transition">
-            Mascotas
-          </Link>
-
           {isAuthenticated() ? (
-            <div className="flex items-center gap-4">
-              {/* Nombre del usuario */}
-              <span className="text-sm text-gray-500">
-                Hola, <span className="font-semibold text-gray-700">{user?.nombre}</span>
-              </span>
-
-              {/* Dashboard según rol */}
+            <div className="flex items-center gap-6">
+              
+              {/* logica para separar al admin del usuario normal */}
               {isAdmin() ? (
-                <Link
-                  to="/admin/dashboard"
-                  className="flex items-center gap-2 text-sm bg-indigo-100 text-indigo-700 px-3 py-1.5 rounded-lg hover:bg-indigo-200 transition"
-                >
-                  <LayoutDashboard size={18} /> Panel Admin
-                </Link>
+                // --- VISTA DEL ADMINISTRADOR (3 OPCIONES) ---
+                <>
+                  <Link to="/pets" className="hover:text-primary-600 transition flex items-center gap-1">
+                    <PawPrint size={18} /> Mascotas
+                  </Link>
+
+                  <Link to="/admin/dashboard" className="hover:text-primary-600 transition flex items-center gap-1">
+                    <LayoutDashboard size={18} /> Panel Admin
+                  </Link>
+                </>
               ) : (
-                <Link
-                  to="/user/dashboard"
-                  className="flex items-center gap-2 text-sm bg-gray-100 px-3 py-1.5 rounded-lg hover:bg-gray-200 transition"
-                >
-                  <User size={18} /> Mi Perfil
-                </Link>
+                // --- VISTA DEL USUARIO NORMAL (3 OPCIONES + SALIR) ---
+                <>
+                  <Link to="/pets" className="hover:text-primary-600 transition flex items-center gap-1">
+                    <PawPrint size={18} /> Mascotas
+                  </Link>
+
+                  <Link to="/user/dashboard" className="hover:text-primary-600 transition flex items-center gap-1">
+                    <FileText size={18} /> Mis Solicitudes
+                  </Link>
+
+                  <Link to="/user/profile" className="hover:text-primary-600 transition flex items-center gap-1">
+                    <User size={18} /> Mi Perfil
+                  </Link>
+                </>
               )}
 
-              {/* Logout */}
+              {/* el boton de salir es igual para ambos, lo ponemos al final */}
               <button
                 onClick={handleLogout}
-                className="flex items-center gap-2 text-red-600 hover:text-red-700 font-semibold transition"
+                className="flex items-center gap-2 text-red-600 hover:text-red-700 font-semibold transition border-l pl-4 border-gray-200"
               >
                 <LogOut size={20} /> Salir
               </button>
+              
             </div>
           ) : (
+            // opciones para visitantes sin sesion
             <div className="flex items-center gap-3">
+              <Link to="/pets" className="hover:text-primary-600 transition mr-4">
+                Catálogo
+              </Link>
               <Link
                 to="/login"
                 className="px-4 py-2 border border-primary-600 text-primary-600 rounded-lg hover:bg-primary-50 transition"
@@ -96,55 +106,73 @@ export const Navbar = () => {
         </div>
       </div>
 
-      {/* Menú móvil */}
+      {/* menu desplegable para moviles */}
       {isMenuOpen && (
         <div className="md:hidden absolute top-full left-0 w-full bg-white border-b border-gray-100 shadow-lg py-4 px-6 flex flex-col gap-4 text-center">
-          <Link
-            to="/pets"
-            onClick={() => setIsMenuOpen(false)}
-            className="text-gray-700 font-medium py-2 hover:bg-gray-50 rounded-lg"
-          >
-            Mascotas
-          </Link>
-
-          <hr className="border-gray-100" />
-
           {isAuthenticated() ? (
             <div className="flex flex-col gap-3">
-              {/* Saludo */}
-              <div className="text-sm text-gray-600 py-2">
-                Hola, <span className="font-semibold text-gray-800">{user?.nombre}</span>
-              </div>
-
-              {/* Dashboard */}
+              
+              {/* logica movil para admin o usuario */}
               {isAdmin() ? (
-                <Link
-                  to="/admin/dashboard"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-center gap-2 bg-indigo-100 text-indigo-700 py-3 rounded-lg font-medium"
-                >
-                  <LayoutDashboard size={18} /> Panel Admin
-                </Link>
+                <>
+                  <Link
+                    to="/pets"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-gray-700 font-medium py-2 hover:bg-gray-50 rounded-lg"
+                  >
+                    Mascotas
+                  </Link>
+                  <Link
+                    to="/admin/dashboard"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-gray-700 font-medium py-2 hover:bg-gray-50 rounded-lg"
+                  >
+                    Panel Admin
+                  </Link>
+                </>
               ) : (
-                <Link
-                  to="/user/dashboard"
-                  onClick={() => setIsMenuOpen(false)}
-                  className="flex items-center justify-center gap-2 bg-gray-100 py-3 rounded-lg text-gray-700 font-medium"
-                >
-                  <User size={18} /> Mi Perfil
-                </Link>
+                <>
+                  <Link
+                    to="/pets"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-gray-700 font-medium py-2 hover:bg-gray-50 rounded-lg"
+                  >
+                    Mascotas
+                  </Link>
+                  <Link
+                    to="/user/dashboard"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-gray-700 font-medium py-2 hover:bg-gray-50 rounded-lg"
+                  >
+                    Mis Solicitudes
+                  </Link>
+                  <Link
+                    to="/user/profile"
+                    onClick={() => setIsMenuOpen(false)}
+                    className="text-gray-700 font-medium py-2 hover:bg-gray-50 rounded-lg"
+                  >
+                    Mi Perfil
+                  </Link>
+                </>
               )}
 
-              {/* Logout */}
+              {/* boton salir movil */}
               <button
                 onClick={handleLogout}
-                className="flex items-center justify-center gap-2 text-red-600 bg-red-50 py-3 rounded-lg font-bold"
+                className="flex items-center justify-center gap-2 text-red-600 bg-red-50 py-3 rounded-lg font-bold mt-2"
               >
-                <LogOut size={20} /> Cerrar Sesión
+                <LogOut size={20} /> Salir
               </button>
             </div>
           ) : (
             <div className="flex flex-col gap-3">
+              <Link
+                to="/pets"
+                onClick={() => setIsMenuOpen(false)}
+                className="text-gray-700 font-medium py-2 hover:bg-gray-50 rounded-lg"
+              >
+                Catálogo
+              </Link>
               <Link
                 to="/login"
                 onClick={() => setIsMenuOpen(false)}
