@@ -39,7 +39,7 @@ class ForgotPasswordUseCase
         // Guardar nuevo token en la base de datos
         DB::table('password_reset_tokens')->insert([
             'email' => $dto->email,
-            'token' => hash('sha256', $token), 
+            'token' => hash('sha256', $token),
             'created_at' => now(),
         ]);
 
@@ -48,7 +48,8 @@ class ForgotPasswordUseCase
 
         // Enviar email
         try {
-            Mail::to($user->email)->send(new ResetPasswordMail($resetUrl, $user->nombre));
+            // Pasamos $token, el string del email del usuario y su nombre.
+            Mail::to($user->email)->send(new ResetPasswordMail($token, $user->email, $user->nombre));
         } catch (\Exception $e) {
             \Log::error('Error al enviar email de reset password: ' . $e->getMessage());
         }

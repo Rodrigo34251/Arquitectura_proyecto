@@ -69,11 +69,8 @@
                 <a href="{{ $resetUrl }}" class="button">Restablecer Contraseña</a>
             </center>
 
-            <p>Si no puedes hacer clic en el botón, copia y pega este enlace en tu navegador:</p>
-            <p style="word-break: break-all; color: #4F46E5;">{{ $resetUrl }}</p>
-
             <div class="warning">
-                <p><strong>⚠️ Importante:</strong></p>
+                <p><strong>Importante:</strong></p>
                 <ul>
                     <li>Este enlace expirará en 60 minutos</li>
                     <li>Si no solicitaste este cambio, ignora este correo</li>

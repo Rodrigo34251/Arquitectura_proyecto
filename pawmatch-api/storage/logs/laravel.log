@@ -3204,3 +3204,215 @@ Did you mean one of these?
 [2026-03-17 06:40:21] local.INFO: Email enviado: Solicitud rechazada {"solicitud_id":5,"destinatario":"fraauda004@gmail.com"} 
 [2026-03-17 15:57:27] local.ERROR: Error al enviar email: Solicitud creada {"solicitud_id":6,"error":"Connection to \"sandbox.smtp.mailtrap.io:2525\" has been closed unexpectedly."} 
 [2026-03-17 15:59:28] local.ERROR: Error al enviar email: Solicitud aprobada {"solicitud_id":6,"error":"Connection to \"sandbox.smtp.mailtrap.io:2525\" has been closed unexpectedly."} 
+[2026-03-18 03:28:15] local.ERROR: The "--classname" option does not exist. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\RuntimeException(code: 0): The \"--classname\" option does not exist. at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Input/ArgvInput.php:226)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Input/ArgvInput.php(153): Symfony/Component/Console/Input/ArgvInput->addLongOption('classname', 'MascotaSeeder')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Input/ArgvInput.php(88): Symfony/Component/Console/Input/ArgvInput->parseLongOption('--classname=Mas...')
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Input/ArgvInput.php(77): Symfony/Component/Console/Input/ArgvInput->parseToken('--classname=Mas...', true)
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Input/Input.php(53): Symfony/Component/Console/Input/ArgvInput->parse()
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(295): Symfony/Component/Console/Input/Input->bind(Object(Symfony/Component/Console/Input/InputDefinition))
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Database/Console/Seeds/SeedCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#12 {main}
+"} 
+[2026-03-18 03:29:01] local.ERROR: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'foto_url' in 'field list' (Connection: mysql, Host: 127.0.0.1, Port: 3307, Database: pawmatch_db, SQL: insert into `mascotas` (`nombre`, `especie`, `raza`, `edad_aproximada`, `sexo`, `descripcion`, `foto_url`, `estado`, `updated_at`, `created_at`) values (Jordy, GATO, nostrum, 94, HEMBRA, Aliquam ut pariatur et., https://via.placeholder.com/640x480.png/00ddbb?text=animals+consectetur, DISPONIBLE, 2026-03-18 03:29:01, 2026-03-18 03:29:01)) {"exception":"[object] (Illuminate\\Database\\QueryException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'foto_url' in 'field list' (Connection: mysql, Host: 127.0.0.1, Port: 3307, Database: pawmatch_db, SQL: insert into `mascotas` (`nombre`, `especie`, `raza`, `edad_aproximada`, `sexo`, `descripcion`, `foto_url`, `estado`, `updated_at`, `created_at`) values (Jordy, GATO, nostrum, 94, HEMBRA, Aliquam ut pariatur et., https://via.placeholder.com/640x480.png/00ddbb?text=animals+consectetur, DISPONIBLE, 2026-03-18 03:29:01, 2026-03-18 03:29:01)) at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php:838)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php(794): Illuminate/Database/Connection->runQueryCallback('insert into `ma...', Array, Object(Closure))
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(42): Illuminate/Database/Connection->run('insert into `ma...', Array, Object(Closure))
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MySqlProcessor.php(35): Illuminate/Database/MySqlConnection->insert('insert into `ma...', Array, 'id')
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(4140): Illuminate/Database/Query/Processors/MySqlProcessor->processInsertGetId(Object(Illuminate/Database/Query/Builder), 'insert into `ma...', Array, 'id')
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(2235): Illuminate/Database/Query/Builder->insertGetId(Array, 'id')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1436): Illuminate/Database/Eloquent/Builder->__call('insertGetId', Array)
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1401): Illuminate/Database/Eloquent/Model->insertAndSetId(Object(Illuminate/Database/Eloquent/Builder), Array)
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1240): Illuminate/Database/Eloquent/Model->performInsert(Object(Illuminate/Database/Eloquent/Builder))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/Factory.php(370): Illuminate/Database/Eloquent/Model->save()
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(275): Illuminate/Database/Eloquent/Factories/Factory->{closure:Illuminate/Database/Eloquent/Factories/Factory::store():365}(Object(App/Models/Mascota), 0)
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/Factory.php(365): Illuminate/Support/Collection->each(Object(Closure))
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/Factory.php(325): Illuminate/Database/Eloquent/Factories/Factory->store(Object(Illuminate/Database/Eloquent/Collection))
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/database/seeders/MascotaSeeder.php(68): Illuminate/Database/Eloquent/Factories/Factory->create()
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Database/Seeders/MascotaSeeder->run()
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(184): Illuminate/Container/Container->call(Array, Array)
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(193): Illuminate/Database/Seeder->{closure:Illuminate/Database/Seeder::__invoke():183}()
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(71): Illuminate/Database/Seeder->__invoke()
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(157): Illuminate/Database/Console/Seeds/SeedCommand->{closure:Illuminate/Database/Console/Seeds/SeedCommand::handle():70}()
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(70): Illuminate/Database/Eloquent/Model::unguarded(Object(Closure))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Database/Console/Seeds/SeedCommand->handle()
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#25 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#26 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#27 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#28 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#29 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#30 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#31 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#32 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Database/Console/Seeds/SeedCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#33 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#34 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#35 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#36 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#37 {main}
+
+[previous exception] [object] (PDOException(code: 42S22): SQLSTATE[42S22]: Column not found: 1054 Unknown column 'foto_url' in 'field list' at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php:47)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(47): PDO->prepare('insert into `ma...')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php(827): Illuminate/Database/MySqlConnection->{closure:Illuminate/Database/MySqlConnection::insert():42}('insert into `ma...', Array)
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Connection.php(794): Illuminate/Database/Connection->runQueryCallback('insert into `ma...', Array, Object(Closure))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/MySqlConnection.php(42): Illuminate/Database/Connection->run('insert into `ma...', Array, Object(Closure))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Query/Processors/MySqlProcessor.php(35): Illuminate/Database/MySqlConnection->insert('insert into `ma...', Array, 'id')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Query/Builder.php(4140): Illuminate/Database/Query/Processors/MySqlProcessor->processInsertGetId(Object(Illuminate/Database/Query/Builder), 'insert into `ma...', Array, 'id')
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Builder.php(2235): Illuminate/Database/Query/Builder->insertGetId(Array, 'id')
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1436): Illuminate/Database/Eloquent/Builder->__call('insertGetId', Array)
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1401): Illuminate/Database/Eloquent/Model->insertAndSetId(Object(Illuminate/Database/Eloquent/Builder), Array)
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Model.php(1240): Illuminate/Database/Eloquent/Model->performInsert(Object(Illuminate/Database/Eloquent/Builder))
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/Factory.php(370): Illuminate/Database/Eloquent/Model->save()
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Collections/Traits/EnumeratesValues.php(275): Illuminate/Database/Eloquent/Factories/Factory->{closure:Illuminate/Database/Eloquent/Factories/Factory::store():365}(Object(App/Models/Mascota), 0)
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/Factory.php(365): Illuminate/Support/Collection->each(Object(Closure))
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Factories/Factory.php(325): Illuminate/Database/Eloquent/Factories/Factory->store(Object(Illuminate/Database/Eloquent/Collection))
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/database/seeders/MascotaSeeder.php(68): Illuminate/Database/Eloquent/Factories/Factory->create()
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Database/Seeders/MascotaSeeder->run()
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(184): Illuminate/Container/Container->call(Array, Array)
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Seeder.php(193): Illuminate/Database/Seeder->{closure:Illuminate/Database/Seeder::__invoke():183}()
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(71): Illuminate/Database/Seeder->__invoke()
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Eloquent/Concerns/GuardsAttributes.php(157): Illuminate/Database/Console/Seeds/SeedCommand->{closure:Illuminate/Database/Console/Seeds/SeedCommand::handle():70}()
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Database/Console/Seeds/SeedCommand.php(70): Illuminate/Database/Eloquent/Model::unguarded(Object(Closure))
+#25 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(36): Illuminate/Database/Console/Seeds/SeedCommand->handle()
+#26 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Util.php(43): Illuminate/Container/BoundMethod::{closure:Illuminate/Container/BoundMethod::call():35}()
+#27 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(96): Illuminate/Container/Util::unwrapIfClosure(Object(Closure))
+#28 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/BoundMethod.php(35): Illuminate/Container/BoundMethod::callBoundMethod(Object(Illuminate/Foundation/Application), Array, Object(Closure))
+#29 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate/Container/BoundMethod::call(Object(Illuminate/Foundation/Application), Array, Array, NULL)
+#30 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(211): Illuminate/Container/Container->call(Array)
+#31 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Command/Command.php(341): Illuminate/Console/Command->execute(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#32 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Console/Command.php(180): Symfony/Component/Console/Command/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Illuminate/Console/OutputStyle))
+#33 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(1117): Illuminate/Console/Command->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#34 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(356): Symfony/Component/Console/Application->doRunCommand(Object(Illuminate/Database/Console/Seeds/SeedCommand), Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#35 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#36 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#37 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#38 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#39 {main}
+"} 
+[2026-03-18 03:31:34] local.INFO: Email enviado: Solicitud creada {"solicitud_id":3,"destinatario":"juan@gmail.com"} 
+[2026-03-18 03:32:30] local.INFO: Email enviado: Solicitud aprobada {"solicitud_id":3,"destinatario":"juan@gmail.com"} 
+[2026-03-18 21:01:58] local.ERROR: Error al enviar email de reset password: Connection to "sandbox.smtp.mailtrap.io:2525" has been closed unexpectedly.  
+[2026-03-18 21:14:22] local.ERROR: Too few arguments to function App\Mail\ResetPasswordMail::__construct(), 2 passed in C:\Users\Laptop1\OneDrive\Desktop\Arquitectura_proyecto\pawmatch-api\app\Modules\Auth\UseCases\ForgotPasswordUseCase.php on line 51 and exactly 3 expected {"exception":"[object] (ArgumentCountError(code: 0): Too few arguments to function App\\Mail\\ResetPasswordMail::__construct(), 2 passed in C:\\Users\\Laptop1\\OneDrive\\Desktop\\Arquitectura_proyecto\\pawmatch-api\\app\\Modules\\Auth\\UseCases\\ForgotPasswordUseCase.php on line 51 and exactly 3 expected at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/app/Mail/ResetPasswordMail.php:18)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/app/Modules/Auth/UseCases/ForgotPasswordUseCase.php(51): App/Mail/ResetPasswordMail->__construct('http://localhos...', 'Mar/xC3/xADa Garc/xC3/xADa')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/app/Modules/Auth/Controllers/AuthController.php(194): App/Modules/Auth/UseCases/ForgotPasswordUseCase->execute(Object(App/Modules/Auth/DTOs/ForgotPasswordDTO))
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Controller.php(54): App/Modules/Auth/Controllers/AuthController->forgotPassword(Object(Illuminate/Http/Request))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/ControllerDispatcher.php(43): Illuminate/Routing/Controller->callAction('forgotPassword', Array)
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Route.php(265): Illuminate/Routing/ControllerDispatcher->dispatch(Object(Illuminate/Routing/Route), Object(App/Modules/Auth/Controllers/AuthController), 'forgotPassword')
+#5 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Route.php(211): Illuminate/Routing/Route->runController()
+#6 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php(822): Illuminate/Routing/Route->run()
+#7 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate/Routing/Router->{closure:Illuminate/Routing/Router::runRouteWithinStack():821}(Object(Illuminate/Http/Request))
+#8 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/SubstituteBindings.php(50): Illuminate/Pipeline/Pipeline->{closure:Illuminate/Pipeline/Pipeline::prepareDestination():178}(Object(Illuminate/Http/Request))
+#9 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Routing/Middleware/SubstituteBindings->handle(Object(Illuminate/Http/Request), Object(Closure))
+#10 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(166): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#11 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(129): Illuminate/Routing/Middleware/ThrottleRequests->handleRequest(Object(Illuminate/Http/Request), Object(Closure), Array)
+#12 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(90): Illuminate/Routing/Middleware/ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate/Http/Request), Object(Closure), 'forgot-password', Object(Closure))
+#13 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Routing/Middleware/ThrottleRequests->handle(Object(Illuminate/Http/Request), Object(Closure), 'forgot-password')
+#14 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(166): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#15 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(129): Illuminate/Routing/Middleware/ThrottleRequests->handleRequest(Object(Illuminate/Http/Request), Object(Closure), Array)
+#16 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Middleware/ThrottleRequests.php(90): Illuminate/Routing/Middleware/ThrottleRequests->handleRequestUsingNamedLimiter(Object(Illuminate/Http/Request), Object(Closure), 'api', Object(Closure))
+#17 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Routing/Middleware/ThrottleRequests->handle(Object(Illuminate/Http/Request), Object(Closure), 'api')
+#18 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#19 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php(821): Illuminate/Pipeline/Pipeline->then(Object(Closure))
+#20 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php(800): Illuminate/Routing/Router->runRouteWithinStack(Object(Illuminate/Routing/Route), Object(Illuminate/Http/Request))
+#21 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php(764): Illuminate/Routing/Router->runRoute(Object(Illuminate/Http/Request), Object(Illuminate/Routing/Route))
+#22 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Routing/Router.php(753): Illuminate/Routing/Router->dispatchToRoute(Object(Illuminate/Http/Request))
+#23 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(200): Illuminate/Routing/Router->dispatch(Object(Illuminate/Http/Request))
+#24 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(180): Illuminate/Foundation/Http/Kernel->{closure:Illuminate/Foundation/Http/Kernel::dispatchToRouter():197}(Object(Illuminate/Http/Request))
+#25 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate/Pipeline/Pipeline->{closure:Illuminate/Pipeline/Pipeline::prepareDestination():178}(Object(Illuminate/Http/Request))
+#26 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull.php(31): Illuminate/Foundation/Http/Middleware/TransformsRequest->handle(Object(Illuminate/Http/Request), Object(Closure))
+#27 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Foundation/Http/Middleware/ConvertEmptyStringsToNull->handle(Object(Illuminate/Http/Request), Object(Closure))
+#28 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TransformsRequest.php(21): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#29 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/TrimStrings.php(51): Illuminate/Foundation/Http/Middleware/TransformsRequest->handle(Object(Illuminate/Http/Request), Object(Closure))
+#30 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Foundation/Http/Middleware/TrimStrings->handle(Object(Illuminate/Http/Request), Object(Closure))
+#31 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePostSize.php(27): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#32 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Http/Middleware/ValidatePostSize->handle(Object(Illuminate/Http/Request), Object(Closure))
+#33 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance.php(109): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#34 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Foundation/Http/Middleware/PreventRequestsDuringMaintenance->handle(Object(Illuminate/Http/Request), Object(Closure))
+#35 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/HandleCors.php(74): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#36 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Http/Middleware/HandleCors->handle(Object(Illuminate/Http/Request), Object(Closure))
+#37 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/TrustProxies.php(58): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#38 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Http/Middleware/TrustProxies->handle(Object(Illuminate/Http/Request), Object(Closure))
+#39 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks.php(22): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#40 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Foundation/Http/Middleware/InvokeDeferredCallbacks->handle(Object(Illuminate/Http/Request), Object(Closure))
+#41 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Http/Middleware/ValidatePathEncoding.php(26): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#42 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(219): Illuminate/Http/Middleware/ValidatePathEncoding->handle(Object(Illuminate/Http/Request), Object(Closure))
+#43 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php(137): Illuminate/Pipeline/Pipeline->{closure:{closure:Illuminate/Pipeline/Pipeline::carry():194}:195}(Object(Illuminate/Http/Request))
+#44 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(175): Illuminate/Pipeline/Pipeline->then(Object(Closure))
+#45 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Http/Kernel.php(144): Illuminate/Foundation/Http/Kernel->sendRequestThroughRouter(Object(Illuminate/Http/Request))
+#46 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1220): Illuminate/Foundation/Http/Kernel->handle(Object(Illuminate/Http/Request))
+#47 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/public/index.php(20): Illuminate/Foundation/Application->handleRequest(Object(Illuminate/Http/Request))
+#48 C:/Program Files/Herd/resources/app.asar.unpacked/resources/valet/server.php(139): require('C://Users//Laptop...')
+#49 {main}
+"} 
+[2026-03-18 21:22:44] local.ERROR: Cannot redeclare class App\Modules\Auth\UseCases\ResetPasswordUseCase (previously declared in C:\Users\Laptop1\OneDrive\Desktop\Arquitectura_proyecto\pawmatch-api\app\Modules\Auth\UseCases\ForgotPasswordUseCase.php:12) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare class App\\Modules\\Auth\\UseCases\\ResetPasswordUseCase (previously declared in C:\\Users\\Laptop1\\OneDrive\\Desktop\\Arquitectura_proyecto\\pawmatch-api\\app\\Modules\\Auth\\UseCases\\ForgotPasswordUseCase.php:12) at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/app/Modules/Auth/UseCases/ForgotPasswordUseCase.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2026-03-18 21:23:43] local.ERROR: Cannot redeclare class App\Modules\Auth\UseCases\ResetPasswordUseCase (previously declared in C:\Users\Laptop1\OneDrive\Desktop\Arquitectura_proyecto\pawmatch-api\app\Modules\Auth\UseCases\ForgotPasswordUseCase.php:12) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare class App\\Modules\\Auth\\UseCases\\ResetPasswordUseCase (previously declared in C:\\Users\\Laptop1\\OneDrive\\Desktop\\Arquitectura_proyecto\\pawmatch-api\\app\\Modules\\Auth\\UseCases\\ForgotPasswordUseCase.php:12) at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/app/Modules/Auth/UseCases/ForgotPasswordUseCase.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2026-03-18 21:27:55] local.ERROR: Cannot redeclare class App\Modules\Auth\UseCases\ResetPasswordUseCase (previously declared in C:\Users\Laptop1\OneDrive\Desktop\Arquitectura_proyecto\pawmatch-api\app\Modules\Auth\UseCases\ForgotPasswordUseCase.php:12) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare class App\\Modules\\Auth\\UseCases\\ResetPasswordUseCase (previously declared in C:\\Users\\Laptop1\\OneDrive\\Desktop\\Arquitectura_proyecto\\pawmatch-api\\app\\Modules\\Auth\\UseCases\\ForgotPasswordUseCase.php:12) at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/app/Modules/Auth/UseCases/ForgotPasswordUseCase.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2026-03-18 21:27:58] local.ERROR: Cannot redeclare class App\Modules\Auth\UseCases\ResetPasswordUseCase (previously declared in C:\Users\Laptop1\OneDrive\Desktop\Arquitectura_proyecto\pawmatch-api\app\Modules\Auth\UseCases\ForgotPasswordUseCase.php:12) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare class App\\Modules\\Auth\\UseCases\\ResetPasswordUseCase (previously declared in C:\\Users\\Laptop1\\OneDrive\\Desktop\\Arquitectura_proyecto\\pawmatch-api\\app\\Modules\\Auth\\UseCases\\ForgotPasswordUseCase.php:12) at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/app/Modules/Auth/UseCases/ForgotPasswordUseCase.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2026-03-18 21:31:22] local.ERROR: Cannot redeclare class App\Modules\Auth\UseCases\ResetPasswordUseCase (previously declared in C:\Users\Laptop1\OneDrive\Desktop\Arquitectura_proyecto\pawmatch-api\app\Modules\Auth\UseCases\ForgotPasswordUseCase.php:12) {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Cannot redeclare class App\\Modules\\Auth\\UseCases\\ResetPasswordUseCase (previously declared in C:\\Users\\Laptop1\\OneDrive\\Desktop\\Arquitectura_proyecto\\pawmatch-api\\app\\Modules\\Auth\\UseCases\\ForgotPasswordUseCase.php:12) at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/app/Modules/Auth/UseCases/ForgotPasswordUseCase.php:12)
+[stacktrace]
+#0 {main}
+"} 
+[2026-03-18 21:36:08] local.ERROR: Error al enviar email de reset password: Connection could not be established with host "sandbox.smtp.mailtrap.io:2525": stream_socket_client(): php_network_getaddresses: getaddrinfo for sandbox.smtp.mailtrap.io failed: No such host is known  
+[2026-03-18 23:58:46] local.ERROR: Command "config:cleaar" is not defined.
+
+Did you mean one of these?
+    cache:clear
+    config:cache
+    config:clear
+    config:make
+    config:publish
+    config:show
+    event:clear
+    optimize:clear
+    queue:clear
+    route:clear
+    view:clear {"exception":"[object] (Symfony\\Component\\Console\\Exception\\CommandNotFoundException(code: 0): Command \"config:cleaar\" is not defined.
+
+Did you mean one of these?
+    cache:clear
+    config:cache
+    config:clear
+    config:make
+    config:publish
+    config:show
+    event:clear
+    optimize:clear
+    queue:clear
+    route:clear
+    view:clear at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php:759)
+[stacktrace]
+#0 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(298): Symfony/Component/Console/Application->find('config:cleaar')
+#1 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/symfony/console/Application.php(195): Symfony/Component/Console/Application->doRun(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#2 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Console/Kernel.php(198): Symfony/Component/Console/Application->run(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#3 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Foundation/Application.php(1235): Illuminate/Foundation/Console/Kernel->handle(Object(Symfony/Component/Console/Input/ArgvInput), Object(Symfony/Component/Console/Output/ConsoleOutput))
+#4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
+#5 {main}
+"} 
