@@ -3416,3 +3416,7 @@ Did you mean one of these?
 #4 C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/artisan(16): Illuminate/Foundation/Application->handleCommand(Object(Symfony/Component/Console/Input/ArgvInput))
 #5 {main}
 "} 
+[2026-03-24 19:17:07] local.ERROR: Maximum execution time of 30 seconds exceeded {"exception":"[object] (Symfony\\Component\\ErrorHandler\\Error\\FatalError(code: 0): Maximum execution time of 30 seconds exceeded at C:/Users/Laptop1/OneDrive/Desktop/Arquitectura_proyecto/pawmatch-api/vendor/laravel/framework/src/Illuminate/Pipeline/Pipeline.php:13)
+[stacktrace]
+#0 {main}
+"} 
