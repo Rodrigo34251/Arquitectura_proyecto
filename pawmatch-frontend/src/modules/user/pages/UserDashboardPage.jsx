@@ -1,86 +1,153 @@
 import { useEffect, useState } from 'react';
-import { mockApi } from '../../../shared/services/api';
-import { useAuth } from '../../../context/AuthContext';
+import solicitudService from '../../../services/solicitudService';
+import { useAuth } from '../../../hooks/useAuth';
 import { Link } from 'react-router-dom';
-import { User, FileText } from 'lucide-react';
+import { User, FileText, Clock, CheckCircle, XCircle } from 'lucide-react';
 
 export const UserDashboardPage = () => {
-  const { user } = useAuth(); // Necesitamos saber quién es el usuario
-  const [requests, setRequests] = useState([]);
+  const { user } = useAuth();
+  const [solicitudes, setSolicitudes] = useState([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState('');
 
   useEffect(() => {
-    const fetchMyRequests = async () => {
-      try {
-        const data = await mockApi.getUserRequests(user.id);
-        setRequests(data);
-      } catch (error) {
-        console.error("Error", error);
-      } finally {
-        setLoading(false);
-      }
-    };
-    fetchMyRequests();
-  }, [user.id]);
+    fetchMySolicitudes();
+  }, []);
 
-  if (loading) return <div className="text-center p-20 font-bold text-gray-500">Cargando tu historial...</div>;
+  const fetchMySolicitudes = async () => {
+    try {
+      setLoading(true);
+      const response = await solicitudService.getMySolicitudes();
+      // Nos aseguramos que siempre sea una lista
+      setSolicitudes(Array.isArray(response.data) ? response.data : []);
+    } catch (err) {
+      console.error('Error cargando solicitudes:', err);
+      setError('Error al cargar tus solicitudes');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  // 1. FUNCIÓN DE SEGURIDAD (El Filtro de Titanio)
+  // Esta función evita el error de "Objects are not valid as a React child"
+  // Si detecta un objeto donde debería haber texto, lo ignora y devuelve vacío.
+  const safe = (value) => {
+    if (typeof value === 'object' && value !== null) return ''; 
+    return value || '';
+  };
+
+  const getEstadoConfig = (estadoRaw) => {
+    const estado = safe(estadoRaw); // Filtramos el estado primero
+    switch (estado) {
+      case 'PENDIENTE':
+        return { icon: Clock, bg: 'bg-yellow-100', text: 'text-yellow-700', label: 'Pendiente' };
+      case 'EN_REVISION':
+        return { icon: Clock, bg: 'bg-blue-100', text: 'text-blue-700', label: 'En Revisión' };
+      case 'APROBADA':
+        return { icon: CheckCircle, bg: 'bg-green-100', text: 'text-green-700', label: 'Aprobada' };
+      case 'RECHAZADA':
+        return { icon: XCircle, bg: 'bg-red-100', text: 'text-red-700', label: 'Rechazada' };
+      default:
+        return { icon: Clock, bg: 'bg-gray-100', text: 'text-gray-700', label: estado || 'Pendiente' };
+    }
+  };
+
+  if (loading) {
+    return (
+      <div className="flex justify-center items-center h-[60vh]">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary-600"></div>
+      </div>
+    );
+  }
 
   return (
     <div className="container mx-auto px-6 py-10 max-w-4xl">
-      
-      {/* Saludo personalizado */}
+
+      {/* Saludo */}
       <div className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 mb-8 flex items-center gap-4">
         <div className="bg-primary-100 p-4 rounded-full text-primary-600">
           <User className="w-8 h-8" />
         </div>
         <div>
-          <h1 className="text-2xl font-bold text-gray-900">Hola, {user.name}</h1>
+          <h1 className="text-2xl font-bold text-gray-900">Hola, {safe(user?.nombre)}</h1>
           <p className="text-gray-500">Bienvenido a tu panel de adoptante</p>
         </div>
       </div>
 
+      {error && (
+        <div className="mb-6 bg-red-50 border border-red-200 text-red-700 p-4 rounded-lg">
+          {safe(error)}
+        </div>
+      )}
+
       <h2 className="text-xl font-bold text-gray-800 mb-4 flex items-center gap-2">
-        <FileText className="w-5 h-5 text-secondary-500" /> Mis Solicitudes de Adopción
+        <FileText className="w-5 h-5 text-indigo-600" />
+        Mis Solicitudes de Adopción
       </h2>
 
-      {/* Lista de solicitudes del usuario */}
       <div className="space-y-4">
-        {requests.length === 0 ? (
+        {solicitudes.length === 0 ? (
           <div className="text-center bg-white p-10 rounded-2xl border border-dashed border-gray-300">
-            <p className="text-gray-500 mb-4">Aún no has solicitado adoptar a ningún peludito.</p>
-            <Link to="/pets" className="text-primary-600 font-bold hover:underline">Ir al catálogo de mascotas</Link>
+            <p className="text-gray-500 mb-4">Aún no tienes solicitudes.</p>
+            <Link to="/pets" className="text-primary-600 font-bold hover:underline">Ir al catálogo</Link>
           </div>
         ) : (
-          requests.map(req => (
-            <div key={req.id} className="bg-white rounded-2xl p-4 shadow-sm border border-gray-100 flex items-center justify-between">
-              
-              <div className="flex items-center gap-4">
-                {/* Mini foto de la mascota */}
-                <div className="w-16 h-16 bg-gray-200 rounded-xl overflow-hidden">
-                  <img src={`/images/pets/${req.petImage}`} alt={req.petName} className="w-full h-full object-cover" />
-                </div>
-                <div>
-                  <h3 className="font-bold text-lg text-gray-900">{req.petName}</h3>
-                  <p className="text-sm text-gray-500">Solicitado el: {new Date(req.date).toLocaleDateString()}</p>
-                </div>
-              </div>
+          solicitudes.map((solicitud, index) => {
+            const estadoConfig = getEstadoConfig(solicitud.estado);
+            const IconoEstado = estadoConfig.icon;
 
-              {/* Estado de la solicitud */}
-              <div className="text-right">
-                <span className={`inline-block px-4 py-1.5 rounded-full text-sm font-bold shadow-sm ${
-                  req.status === 'Pendiente' ? 'bg-secondary-100 text-secondary-700' :
-                  req.status === 'Aprobada' ? 'bg-primary-100 text-primary-700' :
-                  'bg-red-100 text-red-700'
-                }`}>
-                  {req.status}
-                </span>
-              </div>
+            return (
+              <div key={solicitud.id || index} className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-md transition">
+                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
 
-            </div>
-          ))
+                  {/* Info Mascota */}
+                  <div className="flex items-center gap-4">
+                    <div className="w-20 h-20 bg-gray-200 rounded-xl overflow-hidden flex-shrink-0">
+                      <img
+                        src={solicitud.mascota?.foto_url || '/images/pets/default.jpg'}
+                        alt={safe(solicitud.mascota?.nombre)}
+                        className="w-full h-full object-cover"
+                        onError={(e) => { e.target.src = '/images/pets/default.jpg'; }}
+                      />
+                    </div>
+                    <div>
+                      <h3 className="font-bold text-lg text-gray-900">{safe(solicitud.mascota?.nombre)}</h3>
+                      <p className="text-sm text-gray-500">
+                        {safe(solicitud.mascota?.especie)} • {safe(solicitud.mascota?.raza) || 'Mestizo'}
+                      </p>
+                      <p className="text-xs text-gray-400 mt-1">
+                        Solicitado: {solicitud.created_at ? new Date(solicitud.created_at).toLocaleDateString('es-SV') : 'Hoy'}
+                      </p>
+                    </div>
+                  </div>
+
+                  {/* Estado */}
+                  <div className="text-right">
+                    <span className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-sm font-bold ${estadoConfig.bg} ${estadoConfig.text}`}>
+                      <IconoEstado className="w-4 h-4" />
+                      {safe(estadoConfig.label)}
+                    </span>
+                    {solicitud.motivo_rechazo && (
+                      <p className="text-xs text-red-600 mt-2 max-w-xs">
+                        Motivo: {safe(solicitud.motivo_rechazo)}
+                      </p>
+                    )}
+                  </div>
+                </div>
+
+                {/* Comentarios Seguros */}
+                {solicitud.comentarios_adoptante && (
+                  <div className="mt-4 pt-4 border-t border-gray-100">
+                    <p className="text-sm text-gray-600">
+                      <span className="font-semibold">Tus comentarios:</span> {safe(solicitud.comentarios_adoptante)}
+                    </p>
+                  </div>
+                )}
+              </div>
+            );
+          })
         )}
       </div>
-
     </div>
   );
 };

@@ -1,65 +1,112 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext'; // Importamos el contexto
-import { MainLayout } from '../shared/layouts/MainLayout'; // Importamos el Layout
+import { useAuth } from '../hooks/useAuth';
+import { MainLayout } from '../shared/layouts/MainLayout';
 
-// Importaciones de Páginas
+// Páginas
 import { PetDetailPage } from '../modules/pets/pages/PetDetailPage';
 import { LoginPage } from '../modules/auth/pages/LoginPage';
+import { RegisterPage } from '../modules/auth/pages/RegisterPage';
+import { ForgotPasswordPage } from '../modules/auth/pages/ForgotPasswordPage';
+import { ResetPasswordPage } from '../modules/auth/pages/ResetPasswordPage';
 import { CatalogPage } from '../modules/pets/pages/CatalogPage';
 import { AdminDashboardPage } from '../modules/admin/pages/AdminDashboardPage';
 import { UserDashboardPage } from '../modules/user/pages/UserDashboardPage';
-
+import { UserProfile } from '../modules/user/pages/UserProfile'; // La ruta que importaste
 
 // Guardia de Ruta Protegida
-const ProtectedRoute = ({ children }) => {
-  const { token } = useAuth();
-  if (!token) return <Navigate to="/login" replace />; // Redirige a login si no hay sesión
+const ProtectedRoute = ({ children, adminOnly = false }) => {
+  const { isAuthenticated, isAdmin, loading } = useAuth();
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen">
+        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600"></div>
+      </div>
+    );
+  }
+
+  if (!isAuthenticated()) {
+    return <Navigate to="/login" replace />;
+  }
+
+  if (adminOnly && !isAdmin()) {
+    return <Navigate to="/" replace />;
+  }
+
   return children;
 };
-
-// Guardia Basada en Rol (Solo Admin)
-const RoleBasedRoute = ({ children, allowedRoles }) => {
-  const { role } = useAuth();
-  if (!allowedRoles.includes(role)) return <Navigate to="/" replace />; // Redirige a home si no tiene permiso
-  return children;
-};
-
 
 export const AppRouter = () => {
+  const { isAuthenticated, isAdmin } = useAuth();
+
   return (
     <BrowserRouter>
       <Routes>
-        {/* Usamos el MainLayout para todas estas rutas */}
         <Route element={<MainLayout />}>
-          
-          {/* Rutas publicas */}
-          <Route path="/" element={<CatalogPage />} /> {/* Catálogo como Home para el MVP */}
+          {/* Rutas públicas */}
+          <Route path="/" element={<CatalogPage />} />
           <Route path="/pets" element={<CatalogPage />} />
-          
-          {/* Detalle de mascota */}
-          <Route path="/pets/:id" element={<PetDetailPage />} /> 
-          
-          <Route path="/login" element={<LoginPage />} />
-          <Route path="/register" element={<div>Registro (implementa después)</div>} />
+          <Route path="/pets/:id" element={<PetDetailPage />} />
 
-          {/*ruta de usuario autenticado */}
-          <Route path="/user/dashboard" element={
-            <ProtectedRoute>
-              <UserDashboardPage />
-            </ProtectedRoute>
-          } />
+          {/* Auth */}
+          <Route
+            path="/login"
+            element={isAuthenticated() ? <Navigate to="/" replace /> : <LoginPage />}
+          />
+          <Route
+            path="/register"
+            element={isAuthenticated() ? <Navigate to="/" replace /> : <RegisterPage />}
+          />
+          <Route path="/forgot-password" element={<ForgotPasswordPage />} />
+          <Route path="/reset-password" element={<ResetPasswordPage />} />
 
-          {/* rutas de admin */}
-          <Route path="/admin/dashboard" element={
-            <ProtectedRoute> {/* Primero logueado */}
-              <RoleBasedRoute allowedRoles={['admin']}> {/* Luego Admin */}
+          {/* ========================================= */}
+          {/* ZONA DE USUARIO AUTENTICADO */}
+          {/* ========================================= */}
+          
+          <Route
+            path="/user/dashboard"
+            element={
+              <ProtectedRoute>
+                <UserDashboardPage />
+              </ProtectedRoute>
+            }
+          />
+
+          {/* nueva ruta de user profile */}
+          <Route
+            path="/user/profile"
+            element={
+              <ProtectedRoute>
+                <UserProfile />
+              </ProtectedRoute>
+            }
+          />
+
+          {/* ========================================= */}
+
+          {/* Admin */}
+          <Route
+            path="/admin/dashboard"
+            element={
+              <ProtectedRoute adminOnly={true}>
                 <AdminDashboardPage />
-              </RoleBasedRoute>
-            </ProtectedRoute>
-          } />
+              </ProtectedRoute>
+            }
+          />
 
-          {/* Ruta 404 - No encontrada */}
-          <Route path="*" element={<div className="p-10 text-center font-bold text-xl text-red-500">404 - Página No Encontrada</div>} />
+          {/* 404 */}
+          <Route
+            path="*"
+            element={
+              <div className="flex items-center justify-center min-h-screen">
+                <div className="text-center">
+                  <h1 className="text-6xl font-bold text-gray-800">404</h1>
+                  <p className="text-xl text-gray-600 mt-4">Página no encontrada</p>
+                </div>
+              </div>
+            }
+          />
         </Route>
       </Routes>
     </BrowserRouter>
