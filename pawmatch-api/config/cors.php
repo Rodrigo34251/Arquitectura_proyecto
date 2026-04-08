@@ -11,10 +11,11 @@ return [
         'http://localhost:5173',
         'http://127.0.0.1:3000',
         'http://127.0.0.1:5173',
-        'https://arquitectura-proyecto-mgcourot4-rodrigoaq356-7267s-projects.vercel.app',
     ],
 
-    'allowed_origins_patterns' => [],
+    'allowed_origins_patterns' => [
+        '#^https://arquitectura-proyecto-.*\.vercel\.app$#',
+    ],
 
     'allowed_headers' => ['*'],
 
